@@ -4,30 +4,84 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jordi Martorell Masip">
-    <title>Desenvolupament web modern</title>
+    <title>Enciclopèdia Front-end</title>
     <link rel="icon" type="image/png" href="./app/img/ico/computer.png">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"> -->
     <link rel="stylesheet" href="./node_modules/material-icons/iconfont/material-icons.css">
     <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
     <link rel="stylesheet" href="./style.css">
     <script src="index.js"></script>
 </head>
-<body ng-app="MainApp" layout="column" layout-fill>
+<body ng-app="MainApp" ng-cloack layout="column" ng-controller="LayoutController" layout-fill>
 
-  <md-toolbar class="md-primary" layout="row" layout-align="start stretch">
-    <div layout="row" layout-align="start center">
-      <md-button class="md-primary md-raised md-fab" ui-sref="Categoria">
-        <md-icon class="material-icons">face</md-icon>
-      </md-button>
-      <h2>Desenvolupament web modern</h2>
-    </div>    
-  </md-toolbar>
+  <header>
+    <nav layout="column">
+      <md-toolbar class="md-accent topHeader" layout="row" layout-align="center center">
+        <div ui-sref="Portada" layout="row" layout-align="center center"> 
+          <md-icon class="material-icons">home</md-icon>
+          <h2 layout="row" layout-align="center center" layout-padding>Enciclopèdia Front-end</h2>
+        </div>
+      </md-toolbar>      
+      <md-toolbar class="md-primary" layout="row" layout-align="start stretch" hide-xs hide-sm> 
+        <ul layout="row" layout-align="space-around center" flex="grow">
+          <li layout="column">            
+              <md-button id="buttonBundle" class="md-primary md-raised" ng-click="goCategoria()" ng-mouseenter="showBundlerMenu()">
+                <md-icon class="material-icons">layers</md-icon>
+                <span>Module Bundlers</span>
+              </md-button> 
+              <md-list id="listBundle" class="listMenu" layout="column" ng-show="displayBundlers" ng-mouseleave="displayBundlers=!displayBundlers">
+                <md-list-item layout="column" layout-align="start stretch">
+                  <md-button class="md-primary md-accent" ng-click="goDetall()">
+                    <md-icon class="material-icons">layers</md-icon>
+                    <span>Webpack</span>
+                  </md-button> 
+                </md-list-item>
+                <md-list-item layout="column" layout-align="start stretch">
+                  <md-button class="md-primary md-accent" ng-click="goDetall()">
+                    <md-icon class="material-icons">layers</md-icon>
+                    <span>Rollup.js</span>
+                  </md-button> 
+                </md-list-item>
+                <md-list-item layout="column" layout-align="start stretch">
+                  <md-button class="md-primary md-accent" ng-click="goDetall()">
+                    <md-icon class="material-icons">layers</md-icon>
+                    <span>Parcel</span>
+                  </md-button> 
+                </md-list-item>                
+              </md-list-content>
+            </md-list>                  
+          </li>
+          <li>
+            <md-button class="md-primary md-raised" ui-sref="Categoria">
+              <md-icon class="material-icons">toys</md-icon>
+              <span>Preprocessadors</span>
+            </md-button>          
+          </li>
+          <li>
+            <md-button class="md-primary md-raised" ui-sref="Categoria">
+              <md-icon class="material-icons">create</md-icon>
+              <span>Llenguatges Front-end</span>
+            </md-button>          
+          </li>
+          <li>
+            <md-button class="md-primary md-raised" ui-sref="Categoria">
+              <md-icon class="material-icons">build</md-icon>
+              <span>Frameworks Javascript</span>
+            </md-button>          
+          </li>
+        </ul>    
+      </md-toolbar>
+    </nav>
+  </header>  
 
-  <main flex="grow" layout="column">
-    <md-content ui-view="principal" flex="grow" layout="column"></md-content>
+  <main flex="grow" layout="column" layout-align="start center"> 
+    <md-content class="container" ui-view="principal" flex="grow" layout="column"></md-content>
   </main>
 
-  <md-toolbar class="md-accent"></md-toolbar>
+  <footer>
+    <md-toolbar class="md-accent footer" layout="column" layout-align="center stretch"> 
+      <div class="container" layout-padding><span>&copy; 2020 Jordi Martorell Masip - <abbr title="Universitat Oberta de Catalunya">UOC</abbr></span></div>      
+    </md-toolbar>
+  </footer>  
 
 </body>
 </html>

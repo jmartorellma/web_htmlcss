@@ -41,7 +41,7 @@ const AngularMainModule = (templates) => {
     .config(['$mdThemingProvider', ($mdThemingProvider)=>{
         $mdThemingProvider.theme('default')
             .primaryPalette('indigo')
-            .accentPalette('green')
+            .accentPalette('grey')
             .warnPalette('red')
             .backgroundPalette('grey')
     }])
