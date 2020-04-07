@@ -15,10 +15,11 @@
 
   <header>
     <nav layout="column">
-      <md-toolbar class="md-accent topHeader" layout="row" layout-align="center center">
-        <div ui-sref="Portada" layout="row" layout-align="center center"> 
-          <md-icon class="material-icons">home</md-icon>
-          <h2 layout="row" layout-align="center center" layout-padding>Enciclopèdia Front-end</h2>
+      <md-toolbar class="md-accent topHeader" layout="column">
+        <div layout="row" layout-align="space-between center" layout-align-gt-sm="center center" layout-padding> 
+          <span ui-sref="Portada"><md-icon class="md-icon-button material-icons">home</md-icon></span>
+          <h2 ui-sref="Portada" layout="row" layout-align="center center" layout-padding>Enciclopèdia Front-end</h2>
+          <md-button class="md-fab md-primary md-mini" hide-gt-sm><md-icon class="md-icon-button material-icons">menu</md-icon></md-button>
         </div>
       </md-toolbar>      
       <md-toolbar class="md-primary" layout="row" layout-align="start stretch" hide-xs hide-sm> 

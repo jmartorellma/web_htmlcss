@@ -45,7 +45,7 @@ abbr {
     background: linear-gradient(to bottom, black, rgb(63,81,181));
 }
 
-.topHeader > div {
+.topHeader h2, .topHeader span {
     cursor: pointer;
 }
 
