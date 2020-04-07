@@ -23,50 +23,19 @@
       </md-toolbar>      
       <md-toolbar class="md-primary" layout="row" layout-align="start stretch" hide-xs hide-sm> 
         <ul layout="row" layout-align="space-around center" flex="grow">
-          <li layout="column">            
-              <md-button id="buttonBundle" class="md-primary md-raised" ng-click="goCategoria()" ng-mouseenter="showBundlerMenu()">
-                <md-icon class="material-icons">layers</md-icon>
-                <span>Module Bundlers</span>
+          <li ng-repeat="categoria in categoriesList" class="itemMenu" layout="column">
+              <md-button id="{{categoria[1].buttonId}}" class="md-primary md-raised" ng-click="goCategoria(categoria[0])" ng-mouseenter="showMenu(categoria[1])" ng-mouseleave="categoria[1].show=!categoria[1].show">
+                <md-icon class="material-icons">{{categoria[1].icon}}</md-icon>
+                <span>{{categoria[1].desc}}</span>
               </md-button> 
-              <md-list id="listBundle" class="listMenu" layout="column" ng-show="displayBundlers" ng-mouseleave="displayBundlers=!displayBundlers">
-                <md-list-item layout="column" layout-align="start stretch">
-                  <md-button class="md-primary md-accent" ng-click="goDetall()">
-                    <md-icon class="material-icons">layers</md-icon>
-                    <span>Webpack</span>
+              <md-list id="{{categoria[1].listId}}" class="listMenu" layout="column" ng-show="categoria[1].show" ng-mouseleave="categoria[1].show=!categoria[1].show">
+                <md-list-item  ng-repeat="item in categoria[1].items" layout="column" layout-align="start stretch">
+                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria[0], item.codi)" layout="row" layout-align="start center">
+                    <md-icon class="material-icons">{{categoria[1].icon}}</md-icon>
+                    <span>{{item.desc}}</span>
                   </md-button> 
                 </md-list-item>
-                <md-list-item layout="column" layout-align="start stretch">
-                  <md-button class="md-primary md-accent" ng-click="goDetall()">
-                    <md-icon class="material-icons">layers</md-icon>
-                    <span>Rollup.js</span>
-                  </md-button> 
-                </md-list-item>
-                <md-list-item layout="column" layout-align="start stretch">
-                  <md-button class="md-primary md-accent" ng-click="goDetall()">
-                    <md-icon class="material-icons">layers</md-icon>
-                    <span>Parcel</span>
-                  </md-button> 
-                </md-list-item>                
-              </md-list-content>
             </md-list>                  
-          </li>
-          <li>
-            <md-button class="md-primary md-raised" ui-sref="Categoria">
-              <md-icon class="material-icons">toys</md-icon>
-              <span>Preprocessadors</span>
-            </md-button>          
-          </li>
-          <li>
-            <md-button class="md-primary md-raised" ui-sref="Categoria">
-              <md-icon class="material-icons">create</md-icon>
-              <span>Llenguatges Front-end</span>
-            </md-button>          
-          </li>
-          <li>
-            <md-button class="md-primary md-raised" ui-sref="Categoria">
-              <md-icon class="material-icons">build</md-icon>
-              <span>Frameworks Javascript</span>
-            </md-button>          
           </li>
         </ul>    
       </md-toolbar>

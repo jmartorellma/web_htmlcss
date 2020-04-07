@@ -1,29 +1,24 @@
 const SetLayoutController = () => {
     angular.module('MainApp')
-    .controller('LayoutController', ['$scope', '$state', '$mdMenu', 
-        ($scope, $state, $mdMenu) => {
-            $scope.showBundlerMenu = () => {
-                const button = document.querySelector('#buttonBundle');
-                const list = document.querySelector('#listBundle');
-                list.style.width = button.offsetWidth.toString()+"px";
-                $scope.displayBundlers = true;
-            };
-            $scope.showPreprocessadorsMenu = () => {
-                $scope.displayPreprocessadors = true;
-            };
-            $scope.showLlenguatgesMenu = () => {
-                $scope.displayLlenguatges = true;
-            };
-            $scope.showFrameworksMenu = () => {
-                $scope.displayFrameworks = true;
-            };
+    .controller('LayoutController', ['$scope', '$state', 'CATEGORIES',
+        ($scope, $state, CATEGORIES) => {
 
-            $scope.goCategoria = () =>{
-                $state.go('Categoria');
+            $scope.categoriesList = Object.entries(CATEGORIES);
+
+            $scope.showMenu = (menuCategoria) => {
+                const listId = '#' + menuCategoria.buttonId;
+                const idList = '#' + menuCategoria.listId;
+                const button = document.querySelector(listId);
+                const list = document.querySelector(idList);
+                list.style.width = button.offsetWidth.toString()+"px";
+                menuCategoria.show = true;
+            };
+            $scope.goCategoria = (param) => {
+                $state.go('Categoria', { typeCategoria: param });
             }
 
-            $scope.goDetall = () =>{
-                $state.go('Detall');
+            $scope.goDetall = (paramCategoria, paramDetall) =>{
+                $state.go('Detall', { typeCat: paramCategoria, typeDetall: paramDetall });
             }
         }
     ]);

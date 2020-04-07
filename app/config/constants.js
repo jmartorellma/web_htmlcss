@@ -3,76 +3,46 @@ const SetConstants = ()=> {
     angular.module('constantsModule', [])
     .constant('CATEGORIES', {
         'moduleBundlers': {
+            'buttonId': 'buttonBundle',
+            'listId': 'listBundle',
             'desc': 'Module Bundlers',
-            'icon': '',
-            'items':[{'webpack': 'Webpack'},
-                     {'rollupjs': 'Rollup.js'},
-                     {'parcel': 'Parcel'}
-                    ]
+            'icon': 'layers',
+            'show': false,
+            'items':[{'codi': 'webpack', 'desc': 'Webpack'},
+                     {'codi': 'rollupjs', 'desc': 'Rollup.js'},
+                     {'codi': 'parcel', 'desc': 'Parcel'}]
         },
-        'proprocessadors': {
+        'preprocessadors': {
+            'buttonId': 'buttonPreprocessadors',
+            'listId': 'listPreprocessadors',
             'desc': 'Preprocessadors',
-            'icon': '',
-            'items':[{'babel': 'Babel'},
-                     {'sass': 'Sass'},
-                     {'postcss': 'PostCSS'}
-                    ]
+            'icon': 'toys',
+            'show': false,
+            'items':[{'codi': 'babel', 'desc': 'Babel'},
+                     {'codi': 'sass', 'desc': 'Sass'},
+                     {'codi': 'postcss', 'desc': 'PostCSS'}]
         },
         'llenguatgesFrontEnd': {
+            'buttonId': 'buttonLlenguatgesFrontEnd',
+            'listId': 'listLlenguatgesFrontEnd',
             'desc': 'Llenguatges Front-end',
-            'icon': '',
-            'items':[{'html5': 'HTML 5'},
-                     {'css3': 'CSS 3'},
-                     {'javascript': 'Javascript'}
-                    ]
+            'icon': 'create',
+            'show': false,
+            'items':[{'codi': 'html5', 'desc': 'HTML 5'},
+                     {'codi': 'css3', 'desc': 'CSS 3'},
+                     {'codi': 'javascript', 'desc': 'Javascript'}]
         },
         'frameworksJavascript': {
+            'buttonId': 'buttonFrameworksJavascript',
+            'listId': 'listFrameworksJavascript',
             'desc': 'Frameworks Javascript',
-            'icon': '',
-            'items':[{'angular': 'Angular'},
-                     {'react': 'React'},
-                     {'vue': 'Vue'}
-                    ]
+            'icon': 'build',
+            'show': false,
+            'items':[{'codi': 'angular', 'desc': 'Angular'},
+                     {'codi': 'react', 'desc': 'React'},
+                     {'codi': 'vue', 'desc': 'vue'}]
         }
     })
 };
 
 export {SetConstants};
-// (function () {
-//     'use strict';
-//     angular.module('constantsModule', [])
-//     .constant('CATEGORIES', {
-//         'moduleBundlers': {
-//             'desc': 'Module Bundlers',
-//             'icon': '',
-//             'items':[{'webpack': 'Webpack'},
-//                      {'rollupjs': 'Rollup.js'},
-//                      {'parcel': 'Parcel'}
-//                     ]
-//         },
-//         'proprocessadors': {
-//             'desc': 'Preprocessadors',
-//             'icon': '',
-//             'items':[{'babel': 'Babel'},
-//                      {'sass': 'Sass'},
-//                      {'postcss': 'PostCSS'}
-//                     ]
-//         },
-//         'llenguatgesFrontEnd': {
-//             'desc': 'Llenguatges Front-end',
-//             'icon': '',
-//             'items':[{'html5': 'HTML 5'},
-//                      {'css3': 'CSS 3'},
-//                      {'javascript': 'Javascript'}
-//                     ]
-//         },
-//         'frameworksJavascript': {
-//             'desc': 'Frameworks Javascript',
-//             'icon': '',
-//             'items':[{'angular': 'Angular'},
-//                      {'react': 'React'},
-//                      {'vue': 'Vue'}
-//                     ]
-//         }
-//     })
-// })();

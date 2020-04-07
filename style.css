@@ -57,9 +57,16 @@ header ul li {
     position:relative
 }
 
+.itemMenu md-icon{
+    margin: 0;
+}
+
+.itemMenu .md-button > span{
+    padding-left: 5px;
+}
 .listMenu {
     position: absolute;
-    top: 44px;
+    top: 42px;
     left: 8px;    
     background-color: #e0e0e0;
 }

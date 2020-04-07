@@ -18,7 +18,7 @@ const AngularMainModule = (templates) => {
                 }
             })
             .state('Categoria', {
-                url: '/categoria',
+                url: '/:typeCategoria',
                 views: {
                     'principal':{
                         template: templates['categoria'],
@@ -27,7 +27,7 @@ const AngularMainModule = (templates) => {
                 }
             })
             .state('Detall', {
-                url: '/detall',
+                url: '/:typeCat/:typeDetall',
                 views: {
                     'principal':{
                         template: templates['detall'],
