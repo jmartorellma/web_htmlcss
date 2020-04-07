@@ -34,7 +34,6 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
-    margin-bottom: 1rem;
 }
 
 abbr {
@@ -45,7 +44,9 @@ abbr {
     background: linear-gradient(to bottom, black, rgb(63,81,181));
 }
 
-.topHeader h2, .topHeader span {
+.topHeader h2, 
+.topHeader span,
+.sideMenu md-icon {
     cursor: pointer;
 }
 
@@ -74,11 +75,29 @@ header ul li {
     padding: 0;
 }
 
-.listMenu md-list-item::before{
+.listMenu md-list-item::before, 
+.sideMenu md-list-item::before {
     display: none;
 }
 
-header h2 {
+.sideMenu .md-button {
+    font-weight: bold;
+}
+
+.sideMenu > md-list-item > div > span {
+    padding-right: 20px;
+}
+
+.descSideButton{
+    padding-left:10px;
+}
+
+aside > md-sidenav {
+    overflow: hidden;
+}
+
+header h2,
+.sideMenu > md-list md-icon {
     margin: 0;
 }
 

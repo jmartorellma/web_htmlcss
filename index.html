@@ -19,19 +19,21 @@
         <div layout="row" layout-align="space-between center" layout-align-gt-sm="center center" layout-padding> 
           <span ui-sref="Portada"><md-icon class="md-icon-button material-icons">home</md-icon></span>
           <h2 ui-sref="Portada" layout="row" layout-align="center center" layout-padding>Enciclopèdia Front-end</h2>
-          <md-button class="md-fab md-primary md-mini" hide-gt-sm><md-icon class="md-icon-button material-icons">menu</md-icon></md-button>
+          <md-button class="md-fab md-primary md-mini" ng-click="toggleMenu('sideNavMenuBurguer')" hide-gt-sm>
+            <md-icon class="md-icon-button material-icons">menu</md-icon>
+          </md-button>
         </div>
       </md-toolbar>      
       <md-toolbar class="md-primary" layout="row" layout-align="start stretch" hide-xs hide-sm> 
         <ul layout="row" layout-align="space-around center" flex="grow">
           <li ng-repeat="categoria in categoriesList" class="itemMenu" layout="column">
-              <md-button id="{{categoria[1].buttonId}}" class="md-primary md-raised" ng-click="goCategoria(categoria[0])" ng-mouseenter="showMenu(categoria[1])" ng-mouseleave="categoria[1].show=!categoria[1].show">
+              <md-button id="{{categoria[1].buttonId}}" class="md-primary md-raised" ng-click="goCategoria(categoria[0], categoria[1])" ng-mouseenter="showCategoria(categoria[1])">
                 <md-icon class="material-icons">{{categoria[1].icon}}</md-icon>
                 <span>{{categoria[1].desc}}</span>
               </md-button> 
-              <md-list id="{{categoria[1].listId}}" class="listMenu" layout="column" ng-show="categoria[1].show" ng-mouseleave="categoria[1].show=!categoria[1].show">
+              <md-list id="{{categoria[1].listId}}" class="listMenu" layout="column" ng-show="categoria[1].show" ng-mouseleave="categoria[1].show=false">
                 <md-list-item  ng-repeat="item in categoria[1].items" layout="column" layout-align="start stretch">
-                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria[0], item.codi)" layout="row" layout-align="start center">
+                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria[0], categoria[1], item.codi)" layout="row" layout-align="start center">
                     <md-icon class="material-icons">{{categoria[1].icon}}</md-icon>
                     <span>{{item.desc}}</span>
                   </md-button> 
@@ -43,7 +45,47 @@
     </nav>
   </header>  
 
-  <main flex="grow" layout="column" layout-align="start center"> 
+  <aside>
+    <md-sidenav class="md-sidenav-right" md-component-id="sideNavMenuBurguer">
+      <div layout="column" layout-align="start stretch" layout-fill>
+        <header>
+          <md-toolbar class="md-primary" layout="column" layout-align="center center">  
+            <h3>Enciclopèdia Front-end</h3>
+          </md-toolbar>
+          <span layout="row" layout-align="center center" layout-padding><h4>CATEGORIES</h4></span>
+        </header>
+        <md-content>
+          <md-list class="sideMenu">        
+            <md-list-item ng-repeat="categoria in categoriesList" class="sideMenu" layout="column" layout-align="start stretch">
+              <div layout="row" layout-alig="start center">
+                <span layout="row" layout-align="start center">
+                  <md-icon class="material-icons" ng-click="showItem=!showItem" ng-show="!showItem">add_circle</md-icon>
+                  <md-icon class="material-icons" ng-click="showItem=!showItem" ng-show="showItem">remove_circle</md-icon>
+                </span>
+                <md-button ng-click="goCategoria(categoria[0], categoria[1])">
+                  <md-icon class="material-icons">{{categoria[1].icon}}</md-icon>
+                  <span class="descSideButton">{{categoria[1].desc}}</span>
+                </md-button> 
+              </div>            
+              <md-list layout="column" ng-init="showItem=false" ng-show="showItem">
+                <md-list-item  ng-repeat="item in categoria[1].items" layout="column" layout-align="start stretch">
+                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria[0], categoria[1], item.codi)" layout="row" layout-align="start center">
+                    <span flex="10"></span>
+                    <span layout="row" layout-align="start center">
+                      <md-icon class="material-icons">{{categoria[1].icon}}</md-icon>
+                      <span class="descSideButton">{{item.desc}}</span>
+                    </span>
+                  </md-button> 
+                </md-list-item>
+              </md-list>                  
+            </li>
+          </md-list>
+        </md-content>
+      <div>
+    </md-sidenav>
+  </aside>
+
+  <main flex="grow" layout="column" layout-align="start center">    
     <md-content class="container" ui-view="principal" flex="grow" layout="column"></md-content>
   </main>
 
