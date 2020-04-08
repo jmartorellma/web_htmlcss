@@ -41,7 +41,7 @@ const SetLayoutController = () => {
                     $mdSidenav('sideNavMenuBurguer').close();
                 }
                 $scope.activeCat = param;
-                $state.go('Categoria', { typeCategoria: param });
+                $state.go('Categoria', { typeCategoria: param }, {reload: true});
             }
 
             $scope.goDetall = (paramCategoria, menuCategoria, paramDetall) => {

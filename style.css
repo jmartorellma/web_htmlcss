@@ -99,6 +99,7 @@ aside md-toolbar {
 }
 
 aside > md-sidenav {
+    position: fixed;
     overflow: hidden;
 }
 

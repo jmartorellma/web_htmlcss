@@ -47,7 +47,7 @@
   </header>  
 
   <aside>
-    <md-sidenav class="md-sidenav-right" md-component-id="sideNavMenuBurguer" style="position: fixed;">
+    <md-sidenav class="md-sidenav-right " md-component-id="sideNavMenuBurguer">
       <div layout="column" layout-align="start stretch" layout-fill>
         <header>
           <md-toolbar class="md-primary" layout="column" layout-align="center center">  
@@ -88,7 +88,7 @@
   </aside>
 
   <md-content flex="grow" layout="column" layout-align="start stretch">    
-    <main id="main" ui-view="principal" flex="grow" layout="column" layout-align="start center"></main>
+    <main id="main" ui-view="principal" autoscroll="true" flex="grow" layout="column" layout-align="start center"></main>
   </md-content>
 
   <footer>
