@@ -56,7 +56,8 @@ header ul {
     padding: 0;
 }
 
-header ul li {
+header ul li,
+aside md-toolbar {
     position: relative
 }
 
@@ -89,15 +90,23 @@ header ul li {
 }
 
 .sideMenu > md-list-item > div > span {
-    padding-right: 20px;
+    padding-right: 15px;
 }
 
 .descSideButton{
     padding-left:10px;
+    font-size: 0.55rem;
 }
 
 aside > md-sidenav {
     overflow: hidden;
+}
+
+aside md-toolbar md-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 header h2,
@@ -180,12 +189,15 @@ figure figcaption {
         font-size: 1rem;
     }
 
+    h3 {
+        font-size: 1rem;
+    }
+
     .footer, 
     figure figcaption {
         font-size: 0.5rem;
     }
 }
-
 
 @media (min-width: 600px) and (max-width: 960px) {
 

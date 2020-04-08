@@ -25,6 +25,10 @@ const SetLayoutController = () => {
                 side.open();
             }
 
+            $scope.closeSideNav = (idSideNav) => {
+                $mdSidenav(idSideNav).close();
+            }            
+
             $scope.goHome = ()=> {
                 $scope.activeCat = null;
                 $state.go('Portada');        

@@ -47,11 +47,12 @@
   </header>  
 
   <aside>
-    <md-sidenav class="md-sidenav-right" md-component-id="sideNavMenuBurguer">
+    <md-sidenav class="md-sidenav-right" md-component-id="sideNavMenuBurguer" style="position: fixed;">
       <div layout="column" layout-align="start stretch" layout-fill>
         <header>
           <md-toolbar class="md-primary" layout="column" layout-align="center center">  
             <h3>Enciclopèdia Front-end</h3>
+            <md-icon class="material-icons" ng-click="closeSideNav('sideNavMenuBurguer');">clear</md-icon>
           </md-toolbar>
           <span layout="row" layout-align="center center" layout-padding><h4>CATEGORIES</h4></span>
         </header>
@@ -71,7 +72,7 @@
               <md-list layout="column" ng-init="showItem=false" ng-show="showItem">
                 <md-list-item  ng-repeat="item in categoria[1].items" layout="column" layout-align="start stretch">
                   <md-button class="md-primary md-accent" ng-click="goDetall(categoria[0], categoria[1], item.codi)" layout="row" layout-align="start center">
-                    <span flex="25"></span>
+                    <span flex="20"></span>
                     <span layout="row" layout-align="start center">
                       <md-icon class="material-icons">{{categoria[1].icon}}</md-icon>
                       <span class="descSideButton">{{item.desc}}</span>
