@@ -14,9 +14,20 @@ const SetLayoutController = () => {
                 menuCategoria.show = true;
             };
 
+            $scope.hideCategoria = (cat, ev) => {
+                if(ev.toElement.tagName != 'MD-LIST') {
+                    cat.show = false;
+                }
+            }
+
             $scope.toggleMenu = (idSideNav) => {
                 const side = $mdSidenav(idSideNav); 
                 side.open();
+            }
+
+            $scope.goHome = ()=> {
+                $scope.activeCat = null;
+                $state.go('Portada');        
             }
 
             $scope.goCategoria = (param, menuCategoria) => {
@@ -24,16 +35,18 @@ const SetLayoutController = () => {
                 if($mdSidenav('sideNavMenuBurguer') != undefined && 
                    $mdSidenav('sideNavMenuBurguer').isOpen()){
                     $mdSidenav('sideNavMenuBurguer').close();
-                   }
+                }
+                $scope.activeCat = param;
                 $state.go('Categoria', { typeCategoria: param });
             }
 
-            $scope.goDetall = (paramCategoria, menuCategoria, paramDetall) =>{
+            $scope.goDetall = (paramCategoria, menuCategoria, paramDetall) => {
                 menuCategoria.show = false;
                 if($mdSidenav('sideNavMenuBurguer') != undefined && 
                    $mdSidenav('sideNavMenuBurguer').isOpen()){
                     $mdSidenav('sideNavMenuBurguer').close();
-                   }
+                }
+                $scope.activeCat = paramCategoria;
                 $state.go('Detall', { typeCat: paramCategoria, typeDetall: paramDetall });
             }
         }

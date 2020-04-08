@@ -1,11 +1,20 @@
 const SetPortadaController = () => {
     angular.module('MainApp')
-    .controller('PortadaController', ['$scope', '$state',
-        ($scope,$state) => {
+    .controller('PortadaController', ['$scope', 'DataFactory',
+        ($scope, DataFactory) => {
             
-            $scope.anarADetall = () =>{
-                $state.go('Detall');
-            };
+            DataFactory.getDataPortada().then(
+                (data)=>{
+                    $scope.dataPortada = data;
+
+                    const iframe = document.querySelector('iframe');
+                    const linkIframe = document.querySelector('.videoFluid a');
+                    iframe.src = $scope.dataPortada.videoEmbedLink;
+                    linkIframe.href = $scope.dataPortada.videoLink;
+                },
+                (error)=>{
+                    console.log(error);
+                });
         }
     ]);
 };

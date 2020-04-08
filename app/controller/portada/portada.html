@@ -1,5 +1,20 @@
-<h1 layout="row" layout-align="center center" layout-padding>Desenvolupament web modern</h1>
-
-<article flex="grow" layout="column" layout-align="center center">
-    <md-button class="md-raised md-primary" ng-click="anarADetall()">Testing</md-button>
-</article>
+<div class="container" layout="column" flex="grow" layout-align="start stretch">
+    <header>
+        <h1 layout="row" layout-align="center center" layout-padding>{{dataPortada.header}}</h1>
+    </header>
+        
+    <article layout="column" layout-align="start stretch" flex="grow" layout-padding>
+        <section>
+            <p ng-repeat="itemText in dataPortada.paragrafs" ng-bind-html="itemText.htmlText"></p>        
+        </section>
+        <section layout="row" layout-align="center center" flex="grow">
+            <figure layout="column" flex="75">
+                <div class="videoFluid">
+                    <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
+                    <a class="sr">{{dataPortada.videoLinkText}}</a>                    
+                </div>
+                <figcaption lang="en">{{dataPortada.videoFigCaptionText}}</figcaption>
+            </figure> 
+        </section>
+    </article>
+</div>
