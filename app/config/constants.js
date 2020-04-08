@@ -8,9 +8,11 @@ const SetConstants = ()=> {
             'desc': 'Module Bundlers',
             'icon': 'layers',
             'show': false,
-            'items':[{'codi': 'webpack', 'desc': 'Webpack'},
-                     {'codi': 'rollupjs', 'desc': 'Rollup.js'},
-                     {'codi': 'parcel', 'desc': 'Parcel'}]
+            'items':[
+                {'codi': 'webpack', 'desc': 'Webpack'},
+                {'codi': 'rollupjs', 'desc': 'Rollup.js'},
+                {'codi': 'parcel', 'desc': 'Parcel'}
+            ]
         },
         'preprocessadors': {
             'buttonId': 'buttonPreprocessadors',
@@ -18,9 +20,11 @@ const SetConstants = ()=> {
             'desc': 'Preprocessadors',
             'icon': 'toys',
             'show': false,
-            'items':[{'codi': 'babel', 'desc': 'Babel'},
-                     {'codi': 'sass', 'desc': 'Sass'},
-                     {'codi': 'postcss', 'desc': 'PostCSS'}]
+            'items':[
+                {'codi': 'babel', 'desc': 'Babel'},
+                {'codi': 'sass', 'desc': 'Sass'},
+                {'codi': 'postcss', 'desc': 'PostCSS'}
+            ]
         },
         'llenguatgesFrontEnd': {
             'buttonId': 'buttonLlenguatgesFrontEnd',
@@ -28,9 +32,11 @@ const SetConstants = ()=> {
             'desc': 'Llenguatges Front-end',
             'icon': 'create',
             'show': false,
-            'items':[{'codi': 'html5', 'desc': 'HTML 5'},
-                     {'codi': 'css3', 'desc': 'CSS 3'},
-                     {'codi': 'javascript', 'desc': 'Javascript'}]
+            'items':[
+                {'codi': 'html5', 'desc': 'HTML 5'},
+                {'codi': 'css3', 'desc': 'CSS 3'},
+                {'codi': 'javascript', 'desc': 'Javascript'}
+            ]
         },
         'frameworksJavascript': {
             'buttonId': 'buttonFrameworksJavascript',
@@ -38,9 +44,11 @@ const SetConstants = ()=> {
             'desc': 'Frameworks Javascript',
             'icon': 'build',
             'show': false,
-            'items':[{'codi': 'angular', 'desc': 'Angular'},
-                     {'codi': 'react', 'desc': 'React'},
-                     {'codi': 'vue', 'desc': 'vue'}]
+            'items':[
+                {'codi': 'angular', 'desc': 'Angular'},
+                {'codi': 'react', 'desc': 'React'},
+                {'codi': 'vue', 'desc': 'Vue'}
+            ]
         }
     })
 };

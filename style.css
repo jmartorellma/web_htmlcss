@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,600i');
-@import url('https://fonts.googleapis.com/css?family=Roboto|Varela+Round');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto|Varela+Round'); */
 
 * {
     margin: 0;
@@ -55,6 +55,7 @@ header ul {
     list-style-type: none;
     padding: 0;
 }
+
 header ul li {
     position: relative
 }
@@ -66,12 +67,14 @@ header ul li {
 .itemMenu .md-button > span{
     padding-left: 5px;
 }
+
 .listMenu {
     position: absolute;
     top: 42px;
     left: 8px;    
     background-color: #e0e0e0;
 }
+
 .listMenu md-list-item{
     padding: 0;
 }
@@ -111,7 +114,7 @@ main md-content {
 
 p {
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .videoFluid {
@@ -150,6 +153,18 @@ figure figcaption {
     font-size: 0.6rem;
 }
 
+#infoCategoria ul {
+    margin: 2rem 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#infoCategoria ul span {
+    color: rgb(63,81,181);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .footer {
     background: linear-gradient(to bottom, rgb(63,81,181), black);
     font-size: 0.7rem;
@@ -165,7 +180,8 @@ figure figcaption {
         font-size: 1rem;
     }
 
-    .footer {
+    .footer, 
+    figure figcaption {
         font-size: 0.5rem;
     }
 }

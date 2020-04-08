@@ -6,7 +6,6 @@ const SetPortadaController = () => {
             DataFactory.getDataPortada().then(
                 (data)=>{
                     $scope.dataPortada = data;
-
                     const iframe = document.querySelector('iframe');
                     const linkIframe = document.querySelector('.videoFluid a');
                     iframe.src = $scope.dataPortada.videoEmbedLink;
@@ -14,7 +13,8 @@ const SetPortadaController = () => {
                 },
                 (error)=>{
                     console.log(error);
-                });
+                }
+            );
         }
     ]);
 };
