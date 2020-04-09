@@ -3,7 +3,10 @@ const SetLayoutController = () => {
     .controller('LayoutController', ['$scope', '$state', '$mdSidenav', 'CATEGORIES',
         ($scope, $state, $mdSidenav, CATEGORIES) => {
 
-            $scope.categoriesList = Object.entries(CATEGORIES);
+            $scope.categoriesList = Object.entries(CATEGORIES).reduce((acc,[key,val]) => {
+                acc.push({codi: key, valor: val})
+                return acc;
+            },[]);
 
             $scope.showCategoria = (menuCategoria) => {
                 const idButton = '#' + menuCategoria.buttonId;
