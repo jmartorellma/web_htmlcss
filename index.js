@@ -1,4 +1,4 @@
-import angular from './node_modules/angular/angular.min.js';
+import angular from './node_modules/angular/';
 import uirouter from './node_modules/@uirouter/angularjs/release/ui-router-angularjs.min.js';
 import angularanimate from './node_modules/angular-animate/angular-animate.min.js';
 import angularsanitize from './node_modules/angular-sanitize/angular-sanitize.min.js';
