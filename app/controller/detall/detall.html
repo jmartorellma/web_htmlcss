@@ -1,1 +1,22 @@
-DETALL
+<div class="container" layout="column" flex="grow" layout-align="start stretch" layout-padding>
+    <header>
+        <h1 layout="row" layout-align="center center" layout-padding>{{dataDetall.header}}</h1>
+    </header>
+        
+    <article layout="row" layout-xs="column" layout-padding>
+        <figure layout="column" flex="35" flex-xs="100">                
+            <img ng-src="{{dataDetall.imgLink}}" alt="{{dataDetall.altImg}}">                        
+            <figcaption ng-bind-html="dataDetall.figCaption" layout-padding></figcaption>
+        </figure>
+        <div layout="column" layout-align="start stretch" flex="75" flex-xs="100">
+            <p ng-repeat="itemText in dataDetall.paragrafs" ng-bind-html="itemText.htmlText"></p>
+        </div>
+    </article>
+
+    <footer layout="column" layout-padding>
+        <h4>Enllaços a recursos del mateix tipus:</h4>
+        <ul layout="row" layout-align="space-around center">
+            <li ng-repeat="res in dataDetall.linksRe" ng-click="goDetall(res.codi)">{{res.desc}}</li>
+        </ul>
+    </footer>
+</div> 

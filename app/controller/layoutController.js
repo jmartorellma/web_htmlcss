@@ -18,7 +18,7 @@ const SetLayoutController = () => {
             };
 
             $scope.hideCategoria = (cat, ev) => {
-                if(ev.toElement.tagName != 'MD-LIST') {
+                if(ev.toElement != undefined && ev.toElement != null && ev.toElement.tagName != 'MD-LIST') {
                     cat.show = false;
                 }
             }

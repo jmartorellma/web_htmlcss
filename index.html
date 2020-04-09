@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jordi Martorell Masip">
     <title>Enciclopèdia Front-end</title>
-    <link rel="icon" type="image/png" href="./app/img/ico/computer.png">
-    <link rel="stylesheet" href="./node_modules/material-icons/iconfont/material-icons.css">
-    <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
+    <link rel="icon" type="image/png" href="./app/res/ico/computer.png">
+    <!-- <link rel="stylesheet" href="./node_modules/material-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css"> -->
     <link rel="stylesheet" href="./style.css">
     <script src="index.js"></script>
 </head>
@@ -44,7 +44,7 @@
         </ul>    
       </md-toolbar>
     </nav>
-  </header>  
+  </header>   
 
   <aside>
     <md-sidenav class="md-sidenav-right " md-component-id="sideNavMenuBurguer">
@@ -87,8 +87,8 @@
     </md-sidenav>
   </aside>
 
-  <md-content flex="grow" layout="column" layout-align="start stretch">    
-    <main id="main" ui-view="principal" autoscroll="true" flex="grow" layout="column" layout-align="start center"></main>
+  <md-content flex="grow" layout="column" layout-align="start center">    
+    <main id="main" ui-view="principal" autoscroll="true" flex="grow" layout="column" layout-align="start stretch"></main>
   </md-content>
 
   <footer>

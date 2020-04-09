@@ -47,11 +47,12 @@ abbr {
 
 .topHeader h2, 
 .topHeader span,
+ aside md-toolbar md-icon,
 .sideMenu md-icon {
     cursor: pointer;
 }
 
-header ul {
+header ul, footer ul li  {
     list-style-type: none;
     padding: 0;
 }
@@ -73,7 +74,7 @@ aside md-toolbar {
     position: absolute;
     top: 42px;
     left: 8px;    
-    background-color: #e0e0e0;
+    background-color: #e7e7e7;
 }
 
 .listMenu md-list-item{
@@ -93,7 +94,7 @@ aside md-toolbar {
     padding-right: 15px;
 }
 
-.descSideButton{
+.descSideButton {
     padding-left:10px;
     font-size: 0.55rem;
 }
@@ -125,6 +126,10 @@ main md-content {
 p {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
+}
+
+.videoPortada {
+    margin-top: 3rem;
 }
 
 .videoFluid {
@@ -169,7 +174,8 @@ figure figcaption {
     cursor: pointer;
 }
 
-#infoCategoria ul span {
+#infoCategoria ul span,
+footer ul li {
     color: rgb(63,81,181);
     cursor: pointer;
     text-decoration: underline;

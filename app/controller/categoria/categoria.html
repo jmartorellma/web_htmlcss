@@ -4,22 +4,24 @@
     </header>
         
     <article layout="column" layout-align="start stretch" flex="grow" layout-padding>
-        <section id="infoCategoria">
-            <p ng-repeat="itemText in dataCategoria.paragrafs" ng-bind-html="itemText.htmlText"></p> 
-            <ul layout="row" layout-align="space-around center" layout-xs="column" layout-align-xs="center center">
-                <li ng-repeat="enllac in dataCategoria.enllacos" layout="row" layout-align="center center">
-                    <span ng-click="goDetall(enllac.codi)">{{enllac.desc}}</span>
-                </li>
-            </ul>       
-        </section>
-        <section layout="row" layout-align="center center" flex="grow">
-            <figure layout="column" flex="65">
-                <div class="videoFluid">
-                    <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
-                    <a class="sr">{{dataCategoria.videoLinkText}}</a>                    
-                </div>
-                <figcaption lang="en">{{dataCategoria.videoFigCaptionText}}</figcaption>
-            </figure> 
-        </section>
+        <div>
+            <section id="infoCategoria">
+                <p ng-repeat="itemText in dataCategoria.paragrafs" ng-bind-html="itemText.htmlText"></p> 
+                <ul layout="row" layout-align="space-around center" layout-xs="column" layout-align-xs="center center">
+                    <li ng-repeat="enllac in dataCategoria.enllacos" layout="row" layout-align="center center">
+                        <span ng-click="goDetall(enllac.codi)">{{enllac.desc}}</span>
+                    </li>
+                </ul>       
+            </section>
+            <section layout="row" layout-align="center center" flex="grow">
+                <figure layout="column" flex="65">
+                    <div class="videoFluid">
+                        <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
+                        <a class="sr">{{dataCategoria.videoLinkText}}</a>                    
+                    </div>
+                    <figcaption lang="en">{{dataCategoria.videoFigCaptionText}}</figcaption>
+                </figure> 
+            </section>
+        </div>
     </article>
 </div>

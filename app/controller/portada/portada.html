@@ -4,17 +4,19 @@
     </header>
         
     <article layout="column" layout-align="start stretch" flex="grow" layout-padding>
-        <section>
-            <p ng-repeat="itemText in dataPortada.paragrafs" ng-bind-html="itemText.htmlText"></p>        
-        </section>
-        <section layout="row" layout-align="center center" flex="grow">
-            <figure layout="column" flex="65">
-                <div class="videoFluid">
-                    <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
-                    <a class="sr">{{dataPortada.videoLinkText}}</a>                    
-                </div>
-                <figcaption lang="en">{{dataPortada.videoFigCaptionText}}</figcaption>
-            </figure> 
-        </section>
+        <div>
+            <section>
+                <p ng-repeat="itemText in dataPortada.paragrafs" ng-bind-html="itemText.htmlText"></p>        
+            </section>
+            <section layout="row" layout-align="center center" flex="grow" class="videoPortada">
+                <figure layout="column" flex="65" style="height: 100%; width: 100%;">
+                    <div class="videoFluid">
+                        <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
+                        <a class="sr">{{dataPortada.videoLinkText}}</a>                    
+                    </div>
+                    <figcaption lang="en">{{dataPortada.videoFigCaptionText}}</figcaption>
+                </figure> 
+            </section>
+        </div>        
     </article>
 </div>
