@@ -13,7 +13,7 @@ const SetDataFactory = () => {
                         'videoEmbedLink':'https://www.youtube.com/embed/QW2xB9BE-aM',
                         'videoLink': 'https://www.youtube.com/watch?time_continue=1&v=QW2xB9BE-aM&feature=emb_logo',
                         'videoLinkText': 'Vegeu el vídeo a Youtube',
-                        'videoFigCaptionText': 'Web Developement Trends 2020'
+                        'videoFigCaptionText': '<span lang="en">Web Developement Trends 2020</span>'
                     };                    
 
                     if(dataPortada != null) {
@@ -37,7 +37,7 @@ const SetDataFactory = () => {
                             'videoEmbedLink':'https://www.youtube.com/embed/nMhD9IB9YJ8',
                             'videoLink': 'https://www.youtube.com/watch?v=nMhD9IB9YJ8&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
-                            'videoFigCaptionText': 'Webpack, Rollup and Parcel compared'
+                            'videoFigCaptionText': '<span lang="en"><cite>Webpack</cite>, <cite>Rollup</cite> and <cite>Parcel</cite> compared</span>'
                         },
                         'preprocessadors': {
                             'paragrafs': [
@@ -48,7 +48,7 @@ const SetDataFactory = () => {
                             'videoEmbedLink':'https://www.youtube.com/embed/5hNDzcpWwFM',
                             'videoLink': 'https://www.youtube.com/watch?time_continue=1&v=5hNDzcpWwFM&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
-                            'videoFigCaptionText': 'Why you should use a CSS Preprocessor'
+                            'videoFigCaptionText': '<span lang="en">Why you should use a <abbr title="Cascading Style Sheets">CSS</abbr> Preprocessor</span>'
                         },
                         'llenguatgesFrontEnd': {
                             'paragrafs': [
@@ -59,7 +59,7 @@ const SetDataFactory = () => {
                             'videoEmbedLink':'https://www.youtube.com/embed/gT0Lh1eYk78',
                             'videoLink': 'https://www.youtube.com/watch?v=gT0Lh1eYk78&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
-                            'videoFigCaptionText': 'HTML, CSS, JavaScript Explained'
+                            'videoFigCaptionText': '<span lang="en"><abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> & JavaScript Explained</span>'
                         },
                         'frameworksJavascript': {
                             'paragrafs': [
@@ -70,7 +70,7 @@ const SetDataFactory = () => {
                             'videoEmbedLink':'https://www.youtube.com/embed/_P2fGeg9I5o',
                             'videoLink': 'https://www.youtube.com/watch?v=_P2fGeg9I5o&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
-                            'videoFigCaptionText': 'Choosing Your JavaScript Framework'
+                            'videoFigCaptionText': '<span>Choosing Your JavaScript Framework</span>'
                        }
                     };                    
 
@@ -119,12 +119,13 @@ const SetDataFactory = () => {
                         },
                         'babel': {
                             'paragrafs': [
-                                {"htmlText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur velit non pulvinar interdum. In eget justo interdum, euismod libero efficitur, bibendum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vulputate aliquam tristique. Nullam egestas turpis eu nibh blandit, nec facilisis felis vulputate. Suspendisse et augue lorem. Ut dignissim euismod viverra. Nulla eros nisl, ultrices ut quam non, cursus pharetra augue. Sed non tellus sit amet sapien lacinia tincidunt. Nullam nunc magna, accumsan et consequat pulvinar, ultricies quis odio. Proin pellentesque non ex sed tempor. Aenean faucibus metus arcu, id elementum leo accumsan sit amet. Proin ac justo lorem."},
-                                {"htmlText": "Sed eu nunc ut justo iaculis condimentum. Sed at dapibus erat. Integer eleifend consectetur purus, at eleifend magna maximus id. Suspendisse ac dapibus risus. Pellentesque sit amet venenatis turpis. Vivamus euismod nisl nec magna pharetra, eu bibendum nisi varius. Ut ultricies ante non enim tempus, eu congue mauris mattis. Nullam gravida diam a tortor laoreet lobortis. Donec elementum nulla a dolor iaculis condimentum. Nullam euismod placerat neque. Vestibulum ornare mauris nibh, at dictum dui tempus ut. Sed purus dui, dignissim quis rhoncus sed, tristique id urna. Etiam dignissim luctus ornare."},
-                                {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
+                                {"htmlText": "<cite>Babel</cite> és un transcompilador gratuït de <span lang='en'>Javascript</span> de codi obert que s'utilitza principalment per a convertir codi de les versions més noves de <span lang='en'>Javascript</span> en una versió de <span lang='en'>Javascript</span> compatible amb versions anteriors que pugui ser executada per motors de <span lang='en'>Javascript</span> més antics. <cite>Babel<cite> és una eina popular per a utilitzar les funcions noves del llenguatge de programació <span lang='en'>Javascript</span>."},
+                                {"htmlText": "Els desenvolupadors poden utilitzar les noves característiques del llenguatge <span lang='en'>Javascript</span> utilitzant <cite>Babel</cite> per a convertir el seu codi font en versions de <span lang='en'>Javascript</span> que els navegadors en evolució puguin processar. Els <span lang='en'>plugins</span> de <cite>Babel</cite> s'utilitzen per a transformar la sintaxis que no s'admet àmpliament en una versió anterior compatible. Per exemple, les <span lang='en'>arrow functions</span> es converteixen en declaracions de funcions regulars, que els navegadors més antics seran capaços d'interpretar."},
+                                {"htmlText": "<cite>Babel</cite> intenta mantenir-se fidel a l'estàndard <abbr title='European Computer Manufacturers Association Script' lang='en'>ECMAScript</abbr>, tant com sigui raonablement possible. També pot tenir opcions específiques per a complir més especificacions com una compensació al rendiment. També s'intenta utilitzar la menor quantitat de codi possible sense dependre així d'un llarg temps d'execució. De vegades això pot ser difícil de fer, i hi ha altres opcions per a transforamcions específiques, però que poden comprometre el compliment de les especificacions de llegibilitat, mida de fitxer i velocitat."}
                             ],
                             'altImg': 'Logo Babel',
-                            'figCaption': 'Imatge obtinguda del lloc web de <cite>Babel</cite>'
+                            'figCaption': 'Imatge obtinguda del lloc web de <a href="https://babeljs.io/" hreflang="es" target="_blank"><cite>Babel</cite></a>',
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://babeljs.io/docs/en/" hreflang="en" target="_blank">https://babeljs.io/docs/en/</a> i <a href="https://en.wikipedia.org/wiki/Babel_(transcompiler)" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Babel_(transcompiler)</a>'
                         },
                         'sass': {
                             'paragrafs': [

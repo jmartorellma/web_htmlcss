@@ -19,7 +19,7 @@
                         <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
                         <a class="sr">{{dataCategoria.videoLinkText}}</a>                    
                     </div>
-                    <figcaption lang="en">{{dataCategoria.videoFigCaptionText}}</figcaption>
+                    <figcaption lang="en" ng-bind-html="dataCategoria.videoFigCaptionText"></figcaption>
                 </figure> 
             </section>
         </div>
