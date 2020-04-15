@@ -181,6 +181,11 @@ footer ul li {
     text-decoration: underline;
 }
 
+article figure img{
+    width: 100%;
+    max-width: 100%;
+}
+
 .footer {
     background: linear-gradient(to bottom, rgb(63,81,181), black);
     font-size: 0.7rem;
