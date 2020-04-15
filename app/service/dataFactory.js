@@ -89,12 +89,13 @@ const SetDataFactory = () => {
                     const dataDetall = {
                         'webpack': {
                             'paragrafs': [
-                                {"htmlText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur velit non pulvinar interdum. In eget justo interdum, euismod libero efficitur, bibendum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vulputate aliquam tristique. Nullam egestas turpis eu nibh blandit, nec facilisis felis vulputate. Suspendisse et augue lorem. Ut dignissim euismod viverra. Nulla eros nisl, ultrices ut quam non, cursus pharetra augue. Sed non tellus sit amet sapien lacinia tincidunt. Nullam nunc magna, accumsan et consequat pulvinar, ultricies quis odio. Proin pellentesque non ex sed tempor. Aenean faucibus metus arcu, id elementum leo accumsan sit amet. Proin ac justo lorem."},
-                                {"htmlText": "Sed eu nunc ut justo iaculis condimentum. Sed at dapibus erat. Integer eleifend consectetur purus, at eleifend magna maximus id. Suspendisse ac dapibus risus. Pellentesque sit amet venenatis turpis. Vivamus euismod nisl nec magna pharetra, eu bibendum nisi varius. Ut ultricies ante non enim tempus, eu congue mauris mattis. Nullam gravida diam a tortor laoreet lobortis. Donec elementum nulla a dolor iaculis condimentum. Nullam euismod placerat neque. Vestibulum ornare mauris nibh, at dictum dui tempus ut. Sed purus dui, dignissim quis rhoncus sed, tristique id urna. Etiam dignissim luctus ornare."},
-                                {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
+                                {"htmlText": "<cite>Webpack</cite>, és una eina <span lang='en'>open source</span> utilitzada pels desenvolupadors per empaquetar i exportar tots els fitxers necessaris per a que un projecte funcioni amb totes les seves dependències <span lang='en'>front-end</span>. Entre d'altres funcionalitats, amb <cite>Webpack</cite> podem obtenir un fitxer <span>Javascript</span> que continguila totalitat del codi necessari en un projecte minimitzat i transpilat, incloent les seves dependències, o bé un fitxer amb el <abbr title='Cascading Style Sheets' lang='en'>CSS</abbr> després d'haver passat els preprocessadors necessaris."},
+                                {"htmlText": "Utilitzar <cite>Webpack</cite> no suposa una gran dificultat per a les seves funcions més bàsiques, però a l'igual que passa amb altres eines del mateix tipus, segons anem personalitzant i profunditzant en l'aplicació i les seves funcionalitats, com és lògic, el seu us es va complicant. És a dir, com més variables tinguem que controlar amb <cite>Webpack</cite>, més gran serà el codi de configuració i els <span lang='en'>plugins<span> que tinguem que introduir al paquet."},
+                                {"htmlText": "Bàsicament, la configuració constarà d'un punt d'entrada, on s'indica el punt exacte de d'on <cite>Webpack</cite> començarà a analitzar el codi per a generar els paquets; un punt de sortida, on es colocaran els paquets <abbr title='Hypertext Markup Language' lang='en'>HTML</abbr>, <abbr title='Cascading Style Sheets' lang='en'>CSS</abbr> o <span lang='en'>JavaScript</span> que s'hagin generat; carregadors, que fan possible que <cite>Webpack</cite> transformi tots els fitxers requerits; i <span lang='en'>plugins<span> que almplien el rang de funcionalitats disponibles per defecte, oferint entre d'altres, optimització del codi empaquetat, gestió i optimització d'imatges, incloure traces de carregadors, comprovar com ha anat l'execució o afegir codi o variables en els fitxers de la nostra aplicació."}
                             ],
                             'altImg': 'Logo Webpack',
-                            'figCaption': 'Imatge obtinguda del lloc web de Webpack'
+                            'figCaption': 'Imatge obtinguda del repositori <a href="https://github.com/webpack/webpack" hreflang="en" target="_blank"><cite>GitHub</cite> de <cite>Webpack</cite></a>',
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/" hreflang="en" target="_blank">https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/</a>'
                         },
                         'rollupjs': {
                             'paragrafs': [
@@ -103,7 +104,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo Rollup.js',
-                            'figCaption': 'Imatge obtinguda del lloc web de Rollup.js'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>Rollup.js</cite>'
                         },
                         'parcel': {
                             'paragrafs': [
@@ -112,7 +113,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo Parce',
-                            'figCaption': 'Imatge obtinguda del lloc web de Parcel'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>Parcel</cite>'
                         },
                         'babel': {
                             'paragrafs': [
@@ -121,7 +122,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo Babel',
-                            'figCaption': 'Imatge obtinguda del lloc web de Webpack'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>Babel</cite>'
                         },
                         'sass': {
                             'paragrafs': [
@@ -130,7 +131,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo Sass',
-                            'figCaption': 'Imatge obtinguda del lloc web de Sass'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>Sass</cite>'
                         },
                         'postcss': {
                             'paragrafs': [
@@ -139,7 +140,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo PostCSS',
-                            'figCaption': 'Imatge obtinguda del lloc web de PostCSS'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>PostCSS</cite>'
                         },
                         'html5': {
                             'paragrafs': [
@@ -148,7 +149,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo HTML5',
-                            'figCaption': 'Imatge obtinguda del lloc web de HTML5'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>HTML5</cite>'
                         },
                         'css3': {
                             'paragrafs': [
@@ -157,7 +158,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo CSS3',
-                            'figCaption': 'Imatge obtinguda del lloc web de CSS3'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>CSS3</cite>'
                         },
                         'javascript': {
                             'paragrafs': [
@@ -166,7 +167,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo Javascript',
-                            'figCaption': 'Imatge obtinguda del lloc web de Javascript'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>Javascript</cite>'
                         },
                         'angular': {
                             'paragrafs': [
@@ -175,7 +176,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo Angular',
-                            'figCaption': 'Imatge obtinguda del lloc web de Angular'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>Angular</cite>'
                         },
                         'react': {
                             'paragrafs': [
@@ -184,7 +185,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo React',
-                            'figCaption': 'Imatge obtinguda del lloc web de React'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>React</cite>'
                         },
                         'vue': {
                             'paragrafs': [
@@ -193,7 +194,7 @@ const SetDataFactory = () => {
                                 {"htmlText": "Nullam vehicula massa sed posuere aliquet. Nam bibendum placerat nulla, id volutpat est dapibus nec. Maecenas viverra ac orci quis sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit volutpat tellus, tristique sagittis purus fringilla non. Mauris eget justo tempus, venenatis purus quis, pellentesque quam. Integer pulvinar ex turpis, nec sagittis dui vestibulum id. Maecenas facilisis arcu volutpat euismod sagittis. Nam vulputate orci at neque tempus, id scelerisque enim scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dui ex, sagittis in vestibulum ut, varius id mauris. Fusce commodo enim in leo ornare, feugiat dictum erat commodo."}
                             ],
                             'altImg': 'Logo Vue',
-                            'figCaption': 'Imatge obtinguda del lloc web de Vue'
+                            'figCaption': 'Imatge obtinguda del lloc web de <cite>Vue</cite>'
                         }
                     };                    
 

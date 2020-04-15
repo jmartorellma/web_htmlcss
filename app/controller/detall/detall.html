@@ -18,5 +18,6 @@
         <ul layout="row" layout-align="space-around center">
             <li ng-repeat="res in dataDetall.linksRe" ng-click="goDetall(res.codi)">{{res.desc}}</li>
         </ul>
+        <p ng-bind-html="dataDetall.fontText"></p>
     </footer>
 </div> 
