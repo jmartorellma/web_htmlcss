@@ -181,7 +181,8 @@ footer ul li {
     text-decoration: underline;
 }
 
-article figure img{
+article figure img {
+    padding: 1rem;
     width: 100%;
     max-width: 100%;
 }
