@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,600i');
-/* @import url('https://fonts.googleapis.com/css?family=Roboto|Varela+Round'); */
+
+/* custom variables */
+:root {
+    --color-primary: rgb(63,81,181);
+    --color-accent: rgb(0,0,0);
+}
 
 * {
     margin: 0;
@@ -10,7 +15,7 @@
 
 body {
     font: 400 16px/1.6 'Libre Franklin', sans-serif;
-    color: rgb(0,0,0);
+    color: var(--color-accent);
     overflow-x: hidden;
     word-wrap: break-word;
 }
@@ -42,7 +47,7 @@ abbr {
 }
 
 .topHeader {
-    background: linear-gradient(to bottom, black, rgb(63,81,181));
+    background: linear-gradient(to bottom, var(--color-accent), var(--color-primary));
 }
 
 .topHeader h2, 
@@ -168,6 +173,10 @@ figure figcaption {
     font-size: 0.6rem;
 }
 
+.captionImages{
+    padding: 0 1rem;
+}
+
 #infoCategoria ul {
     margin: 2rem 0;
     font-weight: bold;
@@ -176,7 +185,7 @@ figure figcaption {
 
 #infoCategoria ul span,
 footer ul li {
-    color: rgb(63,81,181);
+    color: var(--color-primary);
     cursor: pointer;
     text-decoration: underline;
 }
@@ -188,7 +197,7 @@ article figure img {
 }
 
 .footer {
-    background: linear-gradient(to bottom, rgb(63,81,181), black);
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
     font-size: 0.7rem;
 }
 

@@ -6,7 +6,7 @@
     <article layout="row" layout-xs="column" layout-padding>
         <figure layout="column" flex="35" flex-xs="100">                
             <img ng-src="{{dataDetall.imgLink}}" alt="{{dataDetall.altImg}}">                        
-            <figcaption ng-bind-html="dataDetall.figCaption" layout-padding></figcaption>
+            <figcaption ng-bind-html="dataDetall.figCaption" class="captionImages"></figcaption>
         </figure>
         <div layout="column" layout-align="start stretch" flex="75" flex-xs="100">
             <p ng-repeat="itemText in dataDetall.paragrafs" ng-bind-html="itemText.htmlText"></p>
