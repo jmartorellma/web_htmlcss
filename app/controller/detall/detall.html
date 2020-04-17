@@ -1,9 +1,9 @@
-<div class="container" layout="column" flex="grow" layout-align="start stretch" layout-padding>
+<md-content class="container" layout="column" flex="grow" layout-align="start stretch" layout-padding>
     <header>
         <h1 layout="row" layout-align="center center" layout-padding>{{dataDetall.header}}</h1>
     </header>
         
-    <article layout="row" layout-xs="column" layout-padding>
+    <article layout="row" layout-xs="column" layout-padding flex="grow">
         <figure layout="column" flex="35" flex-xs="100">                
             <img ng-src="{{dataDetall.imgLink}}" alt="{{dataDetall.altImg}}">                        
             <figcaption ng-bind-html="dataDetall.figCaption" class="captionImages"></figcaption>
@@ -20,6 +20,6 @@
                 <li ng-repeat="res in dataDetall.linksRe" ng-click="goDetall(res.codi)">{{res.desc}}</li>
             </ul>
         </div>        
-        <p ng-bind-html="dataDetall.fontText" layout-padding></p>
+        <p class="fontDetall" ng-bind-html="dataDetall.fontText"></p>
     </footer>
-</div> 
+</md-content> 

@@ -1,30 +1,31 @@
-<div class="container" layout="column" flex="grow" layout-align="start stretch">
+<md-content class="container" layout="column" flex="grow" layout-align="start stretch">
     <header>
         <h1 layout="row" layout-align="center center" layout-padding ng-bind-html="dataCategoria.header"></h1>
     </header>
-        
-    <article layout="column" layout-align="start stretch" flex="grow" layout-padding>
-        <div>
-            <section id="infoCategoria">
-                <p ng-repeat="itemText in dataCategoria.paragrafs" ng-bind-html="itemText.htmlText"></p> 
-                <ul layout="row" layout-align="space-around center" layout-xs="column" layout-align-xs="center center">
-                    <li ng-repeat="enllac in dataCategoria.enllacos" layout="row" layout-align="center center">
-                        <span ng-click="goDetall(enllac.codi)">{{enllac.desc}}</span>
-                    </li>
-                </ul>       
-            </section>
-            <section layout="row" layout-align="center center" flex="grow">
-                <figure layout="column" flex="65">
-                    <div class="videoFluid">
-                        <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
-                        <a class="sr">{{dataCategoria.videoLinkText}}</a>                    
-                    </div>
-                    <figcaption lang="en" ng-bind-html="dataCategoria.videoFigCaptionText"></figcaption>
-                </figure> 
-            </section>
-        </div>
-    </article>
-    <footer layout="row" layout-align="start center" layout-padding>
-        <p ng-bind-html="dataCategoria.fontText"></p>
-    </footer>
-</div>
+    <div>    
+        <article layout="column" layout-align="start stretch" flex="grow" layout-padding>
+            <div>
+                <section id="infoCategoria">
+                    <p ng-repeat="itemText in dataCategoria.paragrafs" ng-bind-html="itemText.htmlText"></p> 
+                    <ul layout="row" layout-align="space-around center" layout-xs="column" layout-align-xs="center center">
+                        <li ng-repeat="enllac in dataCategoria.enllacos" layout="row" layout-align="center center">
+                            <span ng-click="goDetall(enllac.codi)">{{enllac.desc}}</span>
+                        </li>
+                    </ul>       
+                </section>
+                <section layout="row" layout-align="center center" flex="grow">
+                    <figure layout="column" flex="65">
+                        <div class="videoFluid">
+                            <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
+                            <a class="sr">{{dataCategoria.videoLinkText}}</a>                    
+                        </div>
+                        <figcaption lang="en" ng-bind-html="dataCategoria.videoFigCaptionText"></figcaption>
+                    </figure> 
+                </section>
+            </div>
+        </article>
+        <footer layout="row" layout-align="start center" layout-padding>
+            <p ng-bind-html="dataCategoria.fontText"></p>
+        </footer>
+    </div>
+</md-content>

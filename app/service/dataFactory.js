@@ -62,7 +62,7 @@ const SetDataFactory = () => {
                             'videoLink': 'https://www.youtube.com/watch?v=gT0Lh1eYk78&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
                             'videoFigCaptionText': '<span lang="en"><abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> & JavaScript Explained</span>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://platzi.com/blog/que-es-frontend-y-backend/" hreflang="es" target="_blank">https://platzi.com/blog/que-es-frontend-y-backend/</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://platzi.com/blog/que-es-frontend-y-backend/" hreflang="es" target="_blank">https://platzi.com/blog/que-es-frontend-y-backend</a>'
                         },
                         'frameworksJavascript': {
                             'paragrafs': [
@@ -99,7 +99,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Webpack',
                             'figCaption': 'Imatge obtinguda del repositori <a href="https://github.com/webpack/webpack" hreflang="en" target="_blank"><cite>GitHub</cite> de <cite>Webpack</cite></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/" hreflang="en" target="_blank">https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/" hreflang="en" target="_blank">https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento</a>'
                         },
                         'rollupjs': {
                             'paragrafs': [
@@ -109,7 +109,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Rollup.js',
                             'figCaption': 'Imatge obtinguda del lloc web de <cite lang="en"><a href="https://rollupjs.org/guide/en/" hreflang="en" target="_blank"><cite>Rollup.js</cite></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://rollupjs.org/guide/en/" hreflang="en" target="_blank">https://rollupjs.org/guide/en/</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://rollupjs.org/guide/en/" hreflang="en" target="_blank">https://rollupjs.org/guide/en</a>'
                         },
                         'parcel': {
                             'paragrafs': [
@@ -119,7 +119,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Parcel',
                             'figCaption': 'Imatge obtinguda del repositori <a href="https://github.com/parcel-bundler" hreflang="en" target="_blank"><cite>GitHub</cite> de <cite>Parcel</cite></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://es.parceljs.org/" hreflang="es" target="_blank">https://es.parceljs.org/</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://es.parceljs.org/" hreflang="es" target="_blank">https://es.parceljs.org</a>'
                         },
                         'babel': {
                             'paragrafs': [
@@ -129,7 +129,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Babel',
                             'figCaption': 'Imatge obtinguda del lloc web de <a href="https://babeljs.io/" hreflang="en" target="_blank"><cite>Babel</cite></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://babeljs.io/docs/en/" hreflang="en" target="_blank">https://babeljs.io/docs/en/</a> i <a href="https://en.wikipedia.org/wiki/Babel_(transcompiler)" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Babel_(transcompiler)</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://babeljs.io/docs/en/" hreflang="en" target="_blank">https://babeljs.io/docs/en</a> i <a href="https://en.wikipedia.org/wiki/Babel_(transcompiler)" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Babel_(transcompiler)</a>'
                         },
                         'sass': {
                             'paragrafs': [
@@ -139,7 +139,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Sass',
                             'figCaption': 'Imatge obtinguda del lloc web de <a href="https://sass-lang.com/" hreflang="en" target="_blank"><cite>Sass</cite></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://sass-lang.com/" hreflang="en" target="_blank">https://sass-lang.com/</a> i <a href="https://es.wikipedia.org/wiki/Sass" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/Sass</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://sass-lang.com/" hreflang="en" target="_blank">https://sass-lang.com</a> i <a href="https://es.wikipedia.org/wiki/Sass" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/Sass</a>'
                         },
                         'postcss': {
                             'paragrafs': [
@@ -149,7 +149,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo PostCSS',
                             'figCaption': 'Imatge obtinguda del lloc web de <a href="https://postcss.org/" hreflang="en" target="_blank"><cite>PostCSS</cite></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.sitepoint.com/an-introduction-to-postcss/" hreflang="en" target="_blank">https://www.sitepoint.com/an-introduction-to-postcss/</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.sitepoint.com/an-introduction-to-postcss/" hreflang="en" target="_blank">https://www.sitepoint.com/an-introduction-to-postcss</a>'
                         },
                         'html5': {
                             'paragrafs': [
@@ -189,7 +189,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Angular',
                             'figCaption': "Imatge obtinguda del lloc web d'<a href='https://angular.io/' hreflang='en' target='_blank'><cite>Angular</cite></a>",
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://angular.io/" hreflang="en" target="_blank">https://angular.io/</a> i <a href="https://es.wikipedia.org/wiki/Angular_(framework)" hreflang="en" target="_blank">https://es.wikipedia.org/wiki/Angular_(framework)</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://angular.io/" hreflang="en" target="_blank">https://angular.io</a> i <a href="https://es.wikipedia.org/wiki/Angular_(framework)" hreflang="en" target="_blank">https://es.wikipedia.org/wiki/Angular_(framework)</a>'
 
                         },
                         'react': {
@@ -200,7 +200,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo React',
                             'figCaption': 'Imatge obtinguda del lloc web de <a href="https://reactjs.org/" hreflang="en" target="_blank"><cite>React</cite></a>', 
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://reactjs.org/" hreflang="en" target="_blank">https://reactjs.org/</a> i <a href="https://es.wikipedia.org/wiki/React" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/React</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://reactjs.org/" hreflang="en" target="_blank">https://reactjs.org</a> i <a href="https://es.wikipedia.org/wiki/React" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/React</a>'
                         },
                         'vue': {
                             'paragrafs': [
@@ -210,7 +210,7 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Vue',
                             'figCaption': 'Imatge obtinguda del lloc web de <a href="https://vuejs.org/" hreflang="en" target="_blank"><cite>Vue</cite></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://vuejs.org/v2/guide/" hreflang="en" target="_blank">https://vuejs.org/v2/guide/</a> i <a href="https://en.wikipedia.org/wiki/Vue.js" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Vue.js</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://vuejs.org/v2/guide/" hreflang="en" target="_blank">https://vuejs.org/v2/guide</a> i <a href="https://en.wikipedia.org/wiki/Vue.js" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Vue.js</a>'
                         }
                     };                    
 
