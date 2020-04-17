@@ -30,7 +30,7 @@
           <li ng-repeat="categoria in categoriesList" class="itemMenu" layout="column">
               <md-button id="{{categoria.valor.buttonId}}" class="md-primary md-raised" ng-class="{'md-accent':activeCat==categoria.codi}" ng-click="goCategoria(categoria.codi, categoria.valor)" ng-mouseenter="showCategoria(categoria.valor)" ng-mouseleave="hideCategoria(categoria.valor, $event)">
                 <md-icon class="material-icons">{{categoria.valor.icon}}</md-icon>
-                <span>{{categoria.valor.desc}}</span>
+                <span ng-bind-html="categoria.valor.desc"></span>
               </md-button> 
               <md-list id="{{categoria.valor.listId}}" class="listMenu" layout="column" ng-show="categoria.valor.show" ng-mouseleave="categoria.valor.show=false">
                 <md-list-item  ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
@@ -66,7 +66,7 @@
                 </span>
                 <md-button ng-click="goCategoria(categoria.codi, categoria.valor)">
                   <md-icon class="material-icons">{{categoria.valor.icon}}</md-icon>
-                  <span class="descSideButton">{{categoria.valor.desc}}</span>
+                  <span class="descSideButton" ng-bind-html="categoria.valor.desc"></span>
                 </md-button> 
               </div>            
               <md-list layout="column" ng-init="showItem=false" ng-show="showItem">

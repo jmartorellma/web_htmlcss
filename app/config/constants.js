@@ -5,7 +5,7 @@ const SetConstants = ()=> {
         'moduleBundlers': {
             'buttonId': 'buttonBundle',
             'listId': 'listBundle',
-            'desc': 'Module Bundlers',
+            'desc': '<span lang="en">Module Bundlers</span>',
             'icon': 'layers',
             'show': false,
             'items':[
@@ -29,7 +29,7 @@ const SetConstants = ()=> {
         'llenguatgesFrontEnd': {
             'buttonId': 'buttonLlenguatgesFrontEnd',
             'listId': 'listLlenguatgesFrontEnd',
-            'desc': 'Llenguatges Front-end',
+            'desc': 'Llenguatges <span lang="en">Front-end</span>',
             'icon': 'create',
             'show': false,
             'items':[
@@ -41,7 +41,7 @@ const SetConstants = ()=> {
         'frameworksJavascript': {
             'buttonId': 'buttonFrameworksJavascript',
             'listId': 'listFrameworksJavascript',
-            'desc': 'Frameworks Javascript',
+            'desc': '<span lang="en">Frameworks</span> Javascript',
             'icon': 'build',
             'show': false,
             'items':[

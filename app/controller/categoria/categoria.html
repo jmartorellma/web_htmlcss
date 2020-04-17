@@ -1,6 +1,6 @@
 <div class="container" layout="column" flex="grow" layout-align="start stretch">
     <header>
-        <h1 layout="row" layout-align="center center" layout-padding>{{dataCategoria.header}}</h1>
+        <h1 layout="row" layout-align="center center" layout-padding ng-bind-html="dataCategoria.header"></h1>
     </header>
         
     <article layout="column" layout-align="start stretch" flex="grow" layout-padding>
@@ -24,4 +24,7 @@
             </section>
         </div>
     </article>
+    <footer layout="row" layout-align="start center" layout-padding>
+        <p ng-bind-html="dataCategoria.fontText"></p>
+    </footer>
 </div>

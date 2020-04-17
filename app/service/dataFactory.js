@@ -37,7 +37,8 @@ const SetDataFactory = () => {
                             'videoEmbedLink':'https://www.youtube.com/embed/nMhD9IB9YJ8',
                             'videoLink': 'https://www.youtube.com/watch?v=nMhD9IB9YJ8&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
-                            'videoFigCaptionText': '<span lang="en"><cite>Webpack</cite>, <cite>Rollup</cite> and <cite>Parcel</cite> compared</span>'
+                            'videoFigCaptionText': '<span lang="en"><cite>Webpack</cite>, <cite>Rollup</cite> and <cite>Parcel</cite> compared</span>',
+                            'fontText': 'Textos elaborats a partir de la informació consultada al Campus virtual de la <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><abbr title="Universitat Oberta de Catalunya">UOC</abbr></a>'
                         },
                         'preprocessadors': {
                             'paragrafs': [
@@ -48,7 +49,8 @@ const SetDataFactory = () => {
                             'videoEmbedLink':'https://www.youtube.com/embed/5hNDzcpWwFM',
                             'videoLink': 'https://www.youtube.com/watch?time_continue=1&v=5hNDzcpWwFM&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
-                            'videoFigCaptionText': '<span lang="en">Why you should use a <abbr title="Cascading Style Sheets">CSS</abbr> Preprocessor</span>'
+                            'videoFigCaptionText': '<span lang="en">Why you should use a <abbr title="Cascading Style Sheets">CSS</abbr> Preprocessor</span>',
+                            'fontText': 'Textos elaborats a partir de la informació consultada al Campus virtual de la <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><abbr title="Universitat Oberta de Catalunya">UOC</abbr></a>'
                         },
                         'llenguatgesFrontEnd': {
                             'paragrafs': [
@@ -59,7 +61,8 @@ const SetDataFactory = () => {
                             'videoEmbedLink':'https://www.youtube.com/embed/gT0Lh1eYk78',
                             'videoLink': 'https://www.youtube.com/watch?v=gT0Lh1eYk78&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
-                            'videoFigCaptionText': '<span lang="en"><abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> & JavaScript Explained</span>'
+                            'videoFigCaptionText': '<span lang="en"><abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> & JavaScript Explained</span>',
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://platzi.com/blog/que-es-frontend-y-backend/" hreflang="es" target="_blank">https://platzi.com/blog/que-es-frontend-y-backend/</a>'
                         },
                         'frameworksJavascript': {
                             'paragrafs': [
@@ -70,7 +73,8 @@ const SetDataFactory = () => {
                             'videoEmbedLink':'https://www.youtube.com/embed/_P2fGeg9I5o',
                             'videoLink': 'https://www.youtube.com/watch?v=_P2fGeg9I5o&feature=emb_logo',
                             'videoLinkText': 'Vegeu el vídeo a Youtube',
-                            'videoFigCaptionText': '<span>Choosing Your JavaScript Framework</span>'
+                            'videoFigCaptionText': '<span lang="en">Choosing Your JavaScript Framework</span>',
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://escuela.it/materias/frameworks-javascript" hreflang="es" target="_blank">https://escuela.it/materias/frameworks-javascript</a>'
                        }
                     };                    
 

@@ -13,11 +13,13 @@
         </div>
     </article>
 
-    <footer layout="column" layout-padding>
-        <h4>Enllaços a recursos del mateix tipus:</h4>
-        <ul layout="row" layout-align="space-around center">
-            <li ng-repeat="res in dataDetall.linksRe" ng-click="goDetall(res.codi)">{{res.desc}}</li>
-        </ul>
-        <p ng-bind-html="dataDetall.fontText"></p>
+    <footer layout="column">
+        <div layout="column" layout-align="start stretch" layout-gt-sm="row" layout-align-gt-sm="start center" layout-padding>
+            <h4>Enllaços a recursos del mateix tipus:</h4>
+            <ul layout="row" layout-align="space-around center" flex-gt-sm="auto">
+                <li ng-repeat="res in dataDetall.linksRe" ng-click="goDetall(res.codi)">{{res.desc}}</li>
+            </ul>
+        </div>        
+        <p ng-bind-html="dataDetall.fontText" layout-padding></p>
     </footer>
 </div> 
