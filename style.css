@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,600i');
 
-/* custom variables */
-:root {
-    --color-primary: rgb(63,81,181);
-    --color-accent: rgb(0,0,0);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +9,7 @@
 
 body {
     font: 400 16px/1.6 'Libre Franklin', sans-serif;
-    color: var(--color-accent);
-    /* color: rgb(0,0,0); */
+    color: rgb(0,0,0);
     overflow-x: hidden;
     word-wrap: break-word;
 }
@@ -48,8 +41,7 @@ abbr {
 }
 
 .topHeader {
-    background: linear-gradient(to bottom, var(--color-accent), var(--color-primary));
-    /* background: linear-gradient(to bottom, rgb(0,0,0), rgb(63,81,181)); */
+    background: linear-gradient(to bottom, rgb(0,0,0), rgb(63,81,181));
 }
 
 .topHeader h2, 
@@ -124,10 +116,12 @@ header h2,
 }
 
 main {
-    overflow:auto
+    overflow: auto;
 }
-.container{
-    max-width: 1200px;
+
+.container {
+    max-width: 90%;
+    width:100%;
 }
 
 p {
@@ -175,8 +169,8 @@ figure figcaption {
     font-size: 0.6rem;
 }
 
-.captionImages{
-    padding: 0 1rem;
+.captionImages {
+    padding: 0 1rem 0 0;
 }
 
 #infoCategoria ul {
@@ -187,21 +181,19 @@ figure figcaption {
 
 #infoCategoria ul span,
 footer ul li {
-    color: var(--color-primary);
-    /* color: rgb(63,81,181); */
+    color: rgb(63,81,181);
     cursor: pointer;
     text-decoration: underline;
 }
 
-article figure img {
+.logoDetalle{
     padding: 1rem;
     width: 100%;
     max-width: 100%;
 }
 
 .footer {
-    background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
-    /* background: linear-gradient(to bottom, rgb(63,81,181), rgb(0,0,0)); */
+    background: linear-gradient(to bottom, rgb(63,81,181), rgb(0,0,0));
     font-size: 0.7rem;
 }
 
@@ -211,7 +203,7 @@ footer p {
 }
 
 .fontDetall{
-    padding-left: 1rem;
+    padding: 0 0 1rem 1rem;
 }
 
 @media (max-width: 600px) {
@@ -226,6 +218,10 @@ footer p {
 
     h3 {
         font-size: 1rem;
+    }
+
+    .captionImages {
+        padding: 0 0 2rem 0;
     }
 
     .footer, 

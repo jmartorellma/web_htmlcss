@@ -1,22 +1,19 @@
-<md-content class="container" layout="column" flex="grow" layout-align="start stretch">
-    <header>
-        <h1 layout="row" layout-align="center center" layout-padding>{{dataPortada.header}}</h1>
-    </header>
-        
-    <article layout="column" layout-align="start stretch" flex="grow" layout-padding>
-        <div>
-            <section>
-                <p ng-repeat="itemText in dataPortada.paragrafs" ng-bind-html="itemText.htmlText"></p>        
-            </section>
-            <section layout="row" layout-align="center center" flex="grow" class="videoPortada">
-                <figure layout="column" flex="65" style="height: 100%; width: 100%;">
-                    <div class="videoFluid">
-                        <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
-                        <a class="sr">{{dataPortada.videoLinkText}}</a>                    
-                    </div>
-                    <figcaption lang="en" ng-bind-html="dataPortada.videoFigCaptionText"></figcaption>
-                </figure> 
-            </section>
-        </div>        
-    </article>
-</md-content>
+<header>
+    <h1 layout="row" layout-align="center center" layout-padding>{{dataPortada.header}}</h1>
+</header>            
+<article layout="column" layout-align="start stretch" flex="grow" layout-padding>
+    <div>
+        <section>
+            <p ng-repeat="itemText in dataPortada.paragrafs" ng-bind-html="itemText.htmlText"></p>        
+        </section>
+        <section layout="row" layout-align="center center" flex="grow" class="videoPortada">
+            <figure layout="column" flex="65" style="height: 100%; width: 100%;">
+                <div class="videoFluid">
+                    <iframe class="videoFluidItem" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Video sobre les tendències actuals en el desenvolupament web"></iframe >
+                    <a class="sr">{{dataPortada.videoLinkText}}</a>                    
+                </div>
+                <figcaption lang="en" ng-bind-html="dataPortada.videoFigCaptionText"></figcaption>
+            </figure> 
+        </section>
+    </div>        
+</article>

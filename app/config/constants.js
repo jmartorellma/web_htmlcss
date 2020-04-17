@@ -29,7 +29,7 @@ const SetConstants = ()=> {
         'llenguatgesFrontEnd': {
             'buttonId': 'buttonLlenguatgesFrontEnd',
             'listId': 'listLlenguatgesFrontEnd',
-            'desc': 'Llenguatges <span lang="en">Front-end</span>',
+            'desc': '<span>Llenguatges <span lang="en">Front-end</span></span>',
             'icon': 'create',
             'show': false,
             'items':[
@@ -41,7 +41,7 @@ const SetConstants = ()=> {
         'frameworksJavascript': {
             'buttonId': 'buttonFrameworksJavascript',
             'listId': 'listFrameworksJavascript',
-            'desc': '<span lang="en">Frameworks</span> Javascript',
+            'desc': '<span><span lang="en">Frameworks</span> Javascript</span>',
             'icon': 'build',
             'show': false,
             'items':[

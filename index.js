@@ -1,20 +1,19 @@
 import './node_modules/material-icons/iconfont/material-icons.css';
 import './node_modules/angular-material/angular-material.min.css';
 
-// import Promise from './node_modules/core-js/modules/es6.promise.js';
-import Object from './node_modules/core-js/modules/es7.object.entries.js';
-
+import './node_modules/core-js/modules/es6.array.find.js';
+import './node_modules/core-js/modules/es7.object.entries.js';
 /** 
  * No s'importa angular ja que ui-router ja fa l'import de la llibreria implícitament i amb tots dos
  * la consola del navegador llança un error avisant de s'esta carregant la llibreria 2 vegades
  * */
 // import angular from './node_modules/angular/angular.min.js';
-import uirouter from './node_modules/@uirouter/angularjs/release/ui-router-angularjs.min.js';
-import angularanimate from './node_modules/angular-animate/angular-animate.min.js';
-import angularsanitize from './node_modules/angular-sanitize/angular-sanitize.min.js';
-import angulararia from './node_modules/angular-aria/angular-aria.min.js';
-import angularmessages from './node_modules/angular-messages/angular-messages.min.js';
-import angularmaterial from './node_modules/angular-material/angular-material.min.js';
+import './node_modules/@uirouter/angularjs/release/ui-router-angularjs.min.js';
+import './node_modules/angular-animate/angular-animate.min.js';
+import './node_modules/angular-sanitize/angular-sanitize.min.js';
+import './node_modules/angular-aria/angular-aria.min.js';
+import './node_modules/angular-messages/angular-messages.min.js';
+import './node_modules/angular-material/angular-material.min.js';
 
 import {images} from './app/config/loadImages.js';
 import {templates} from './app/config/loadTemplates.js';
