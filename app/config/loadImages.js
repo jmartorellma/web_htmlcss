@@ -9,7 +9,7 @@ import react from '../res/img/react.svg';
 import rollup from '../res/img/rollup.svg';
 import sass from '../res/img/sass.svg';
 import vue from '../res/img/vue.png';
-import webpack from '../res/img/webpack.svg';
+import webpack from '../res/img/webpack.png';
 
 const images = {
     'angular': angular,

@@ -11,7 +11,6 @@
 </head>
 <body ng-app="MainApp" ng-cloak layout="column" ng-controller="LayoutController">
   <a class="sr" href="#main">Salta al contingut principal</a>
-
   <header>
     <nav layout="column">
       <md-toolbar class="md-accent topHeader" layout="column">
@@ -42,8 +41,7 @@
         </ul>    
       </md-toolbar>
     </nav>
-  </header>   
-
+  </header>
   <aside>
     <md-sidenav class="md-sidenav-right " md-component-id="sideNavMenuBurguer">
       <div layout="column" layout-align="start stretch" layout-fill>
@@ -84,18 +82,15 @@
       <div>
     </md-sidenav>
   </aside>
-
   <main id="main" flex="grow" layout="column" layout-align="start stretch">
     <md-content layout="row" layout-align="center stretch" layout-fill>
       <div class="container" ui-view="principal" autoscroll="true" layout="column" layout-align="start stretch" flex="grow" layout-padding></div>    
     </md-content>
   </main>
-
   <footer layout="column" layout-align="center stretch">
     <md-toolbar class="md-accent footer" layout="column" layout-align="center stretch"> 
       <div class="container" layout="row" layout-align="start center" layout-padding><span>&copy; <time datetime="2020">2020</time> Jordi Martorell Masip - <abbr title="Universitat Oberta de Catalunya">UOC</abbr></span></div>      
     </md-toolbar>
-  </footer>  
-
+  </footer> 
 </body>
 </html>
