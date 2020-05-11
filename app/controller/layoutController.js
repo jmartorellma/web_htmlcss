@@ -1,8 +1,11 @@
-const SetLayoutController = () => {
+const SetLayoutController = (images) => {
     angular.module('MainApp')
     .controller('LayoutController', ['$scope', '$state', '$mdSidenav', 'CATEGORIES',
         ($scope, $state, $mdSidenav, CATEGORIES) => {
 
+            $scope.logotip = images.logotip;
+            $scope.jordi = images.jordi;
+            
             $scope.categoriesList = Object.entries(CATEGORIES).reduce((acc,[key,val]) => {
                 acc.push({codi: key, valor: val})
                 return acc;

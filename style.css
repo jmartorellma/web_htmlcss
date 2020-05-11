@@ -48,6 +48,10 @@ a:link,a:visited,a:hover,a:active{
     background: linear-gradient(to bottom, rgb(0,0,0), rgb(63,81,181));
 }
 
+#logotip {
+    max-width: 80px;
+}
+
 .topHeader h2, 
 .topHeader span,
  aside md-toolbar md-icon,
@@ -201,16 +205,34 @@ footer ul li {
     font-size: 0.7rem;
 }
 
+.footer .titolFooter {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+footer .container {
+    margin: auto;
+}
+
+#imatgeJordi {
+    max-width: 50px;
+    clip-path: polygon(50% 0, 100% 15%, 90% 80%, 50% 100%, 10% 80%, 0 15%);
+}
+
 footer p {
     font-size: 0.6rem;
     margin: 2rem 0 0 0;
 }
 
-.fontDetall{
+.fontDetall {
     padding: 0 0 1rem 1rem;
 }
 
 @media (max-width: 600px) {
+   
+    #logotip {
+        max-width: 60px;
+    }
 
     h1{
         font-size: 1.5rem;
@@ -240,3 +262,11 @@ footer p {
         font-size: 0.6rem;
     }
 }
+
+@media (min-width: 600px) {
+
+    .titolFooter {
+        padding-left: 15px;
+    }
+}
+

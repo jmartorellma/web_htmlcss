@@ -28,7 +28,7 @@ import {SetDetallController} from './app/controller/detall/detallController.js';
 SetConstants();
 AngularMainModule(templates);
 SetDataFactory();
-SetLayoutController();
+SetLayoutController(images);
 SetPortadaController();
 SetCategoriaController();
 SetDetallController(images);
