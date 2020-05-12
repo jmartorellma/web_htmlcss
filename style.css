@@ -214,6 +214,10 @@ footer .container {
     margin: auto;
 }
 
+.fotoContainer {
+    padding-right: 15px;
+}
+
 #imatgeJordi {
     max-width: 50px;
     clip-path: polygon(50% 0, 100% 15%, 90% 80%, 50% 100%, 10% 80%, 0 15%);
@@ -234,7 +238,7 @@ footer p {
         max-width: 60px;
     }
 
-    h1{
+    h1 {
         font-size: 1.5rem;
     }
 
@@ -263,10 +267,9 @@ footer p {
     }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 960px) {
 
-    .titolFooter {
-        padding-left: 15px;
+    #imatgeJordi {
+        max-width: 45px;
     }
 }
-
