@@ -256,6 +256,11 @@ footer p {
         font-size: 1rem;
     }
 
+    .imatgeLateral {
+        max-width: 30px;
+        padding-right: 0;
+    }
+
     .enllacCategoria {
         padding-bottom: 15px;
     }

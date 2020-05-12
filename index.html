@@ -32,7 +32,6 @@
               <md-list id="{{categoria.valor.listId}}" class="listMenu" layout="column" ng-show="categoria.valor.show" ng-mouseleave="categoria.valor.show=false">
                 <md-list-item  ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
                   <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start stretch">
-                    <!-- <md-icon class="material-icons">{{categoria.valor.icon}}</md-icon> -->
                     <img class="imatgeEnllac" ng-src="{{item.img}}" alt="imatge destacada detall" />
                     <span>{{item.desc}}</span>
                   </md-button> 
@@ -70,8 +69,8 @@
                 <md-list-item  ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
                   <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start center">
                     <span flex="20"></span>
-                    <span layout="row" layout-align="start center">
-                      <md-icon class="material-icons">{{categoria.valor.icon}}</md-icon>
+                    <span layout="row" layout-align="start stretch">                      
+                      <img class="imatgeEnllac imatgeLateral" ng-src="{{item.img}}" alt="imatge destacada detall" />
                       <span class="descSideButton">{{item.desc}}</span>
                     </span>
                   </md-button> 
