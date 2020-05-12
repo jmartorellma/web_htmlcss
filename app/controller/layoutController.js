@@ -7,6 +7,9 @@ const SetLayoutController = (images) => {
             $scope.jordi = images.jordi;
             
             $scope.categoriesList = Object.entries(CATEGORIES).reduce((acc,[key,val]) => {
+                val.items.forEach(element => {
+                    element.img = images[element.codi];
+                });
                 acc.push({codi: key, valor: val})
                 return acc;
             },[]);

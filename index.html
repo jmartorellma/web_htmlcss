@@ -31,8 +31,9 @@
               </md-button> 
               <md-list id="{{categoria.valor.listId}}" class="listMenu" layout="column" ng-show="categoria.valor.show" ng-mouseleave="categoria.valor.show=false">
                 <md-list-item  ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
-                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start center">
-                    <md-icon class="material-icons">{{categoria.valor.icon}}</md-icon>
+                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start stretch">
+                    <!-- <md-icon class="material-icons">{{categoria.valor.icon}}</md-icon> -->
+                    <img class="imatgeEnllac" ng-src="{{item.img}}" alt="imatge destacada detall" />
                     <span>{{item.desc}}</span>
                   </md-button> 
                 </md-list-item>
@@ -92,7 +93,14 @@
       <div class="container" layout="column" layout-align="start stretch">
         <div layout="row" layout-align="start stretch">
           <div class="fotoContainer">  
-            <img id="imatgeJordi" ng-src="{{jordi}}" alt="Fotografia Desenvolupador" title="Angular Developer"/> 
+            <img id="imatgeJordi" ng-src="{{jordi}}" alt="Fotografia Desenvolupador" title="Angular Developer"/>
+            <!-- <svg height="0" width="0">
+              <defs>
+                  <clipPath id="fotoPath">
+                    <polygon points="50 0, 100 15, 90 80, 50 100, 10 80, 0 15" />
+                  </clipPath>
+              </defs>
+            </svg> -->
           </div> 
           <div layout="row" layout-align="space-between center" layout-xs="column" layout-align-xs="space-around end" flex="grow">
             <div flex-order-xs="2">&copy; <time datetime="2020">2020</time> Jordi Martorell Masip - <abbr title="Universitat Oberta de Catalunya">UOC</abbr></div>
