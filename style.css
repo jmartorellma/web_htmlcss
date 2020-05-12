@@ -181,6 +181,11 @@ figure figcaption {
     padding: 0 1rem 0 0;
 }
 
+.imatgeEnllac {
+    max-width: 40px;
+    padding-right: 15px;
+}
+
 #infoCategoria ul {
     margin: 2rem 0;
     font-weight: bold;
@@ -248,6 +253,10 @@ footer p {
 
     h3 {
         font-size: 1rem;
+    }
+
+    .enllacCategoria {
+        padding-bottom: 15px;
     }
 
     .captionImages {

@@ -30,5 +30,5 @@ AngularMainModule(templates);
 SetDataFactory();
 SetLayoutController(images);
 SetPortadaController();
-SetCategoriaController();
+SetCategoriaController(images);
 SetDetallController(images);

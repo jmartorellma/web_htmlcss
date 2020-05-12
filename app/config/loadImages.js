@@ -1,17 +1,17 @@
-import jordi from '../res/img/jordi.jpg';
 import angular from '../res/img/angular.svg';
 import babel from '../res/img/babel.svg';
 import css3 from '../res/img/css3.svg';
 import html5 from '../res/img/html5.svg';
 import javascript from '../res/img/javascript.svg';
-import parcel from '../res/img/parcel.png';
+import parcel from '../res/img/parcel.svg';
 import postcss from '../res/img/postcss.svg';
 import react from '../res/img/react.svg';
 import rollup from '../res/img/rollup.svg';
 import sass from '../res/img/sass.svg';
 import vue from '../res/img/vue.svg';
-import webpack from '../res/img/webpack.png';
+import webpack from '../res/img/webpack.svg';
 import logotip from '../res/img/logotip.svg';
+import jordi from '../res/img/jordi.jpg';
 
 const images = {
     'jordi': jordi,
