@@ -19,7 +19,12 @@
         <div layout="column" layout-align="start stretch" layout-gt-sm="row" layout-align-gt-sm="start center" layout-padding>
             <h4>Enllaços a recursos del mateix tipus:</h4>
             <ul layout="row" layout-align="space-around center" flex-gt-sm="auto">
-                <li ng-repeat="res in dataDetall.linksRe" ng-click="goDetall(res.codi)">{{res.desc}}</li>
+                <li ng-repeat="res in dataDetall.linksRe" flex="auto" ng-click="goDetall(res.codi)">
+                    <div layout="row" layout-align="center stretch">
+                        <img class="imatgeEnllac" ng-src="{{res.img}}" alt="imatge destacada detall" />
+                        <div layout="row" layout-align="center center"></span>{{res.desc}}</span></div>
+                    </div>                    
+                </li>
             </ul>
         </div>        
         <p class="fontDetall" ng-bind-html="dataDetall.fontText"></p>

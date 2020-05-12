@@ -223,6 +223,10 @@ footer .container {
     padding-right: 15px;
 }
 
+.fotoContainer svg {
+    display: inherit;
+}
+
 #imatgeJordi {
     max-width: 50px;
     clip-path: polygon(50% 0, 100% 15%, 90% 80%, 50% 100%, 10% 80%, 0 15%);
