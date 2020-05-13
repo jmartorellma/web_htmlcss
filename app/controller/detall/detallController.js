@@ -2,6 +2,11 @@ const SetDetallController =  (images) => {
     angular.module('MainApp')
     .controller('DetallController', ['$scope', '$state', '$stateParams', 'DataFactory', 'CATEGORIES',
         ($scope, $state, $stateParams, DataFactory, CATEGORIES) => {
+
+            $scope.imageDef = images.webpack;
+            $scope.imageM = images.rollupjs; 
+            $scope.imageG = images.parcel;
+                    
             DataFactory.getDataDetall($stateParams.typeDetall).then(
                 (data)=>{
                     $scope.dataDetall = data;
@@ -18,6 +23,10 @@ const SetDetallController =  (images) => {
             $scope.goDetall = (codi) => {
                 $state.go('Detall', { typeCat: $stateParams.typeCat, typeDetall: codi });
             };
+
+            $scope.$on('$viewContentLoaded', function(event) {
+                if (!$scope.$$phase) $scope.$apply();
+            });
         }
     ]);
 };

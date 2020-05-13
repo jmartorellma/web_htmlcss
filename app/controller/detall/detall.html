@@ -1,5 +1,5 @@
 <div>
-    <article layout="column" layout-align="start stretch" flex="grow">
+    <article layout="column" layout-align="start stretch" flex="grow">        
         <div layout-padding>
             <h1 layout="row" layout-align="center center" layout-padding>{{dataDetall.header}}</h1>
             <div layout="column" layout-gt-xs="row" layout-align="start stretch">
@@ -12,6 +12,28 @@
                 <div layout="column" layout-align="start stretch" flex-gt-xs="75">              
                     <p ng-repeat="itemText in dataDetall.paragrafs" ng-bind-html="itemText.htmlText"></p>            
                 </div>
+            </div>
+        </div>
+        <div class="recursosGrafics" layout="row" layout-align="space-around stretch" layout-xs="column" layout-align-xs="center stretch">
+            <div flex-gt-xs="30">
+                <figure>                
+                    <picture>                   
+                        <source media="(min-width: 960px)" ng-srcset="{{imageG}}">
+                        <source media="(min-width: 600px)" ng-srcset="{{imageM}}"> 
+                        <img ng-src="{{imageDef}}" alt="cat">                        
+                    </picture>                    
+                    <figcaption ng-bind-html="dataDetall.figCaption" class="captionImages"></figcaption>
+                </figure>               
+            </div>
+            <div flex-gt-xs="30">
+                <figure>                
+                    <picture>                   
+                        <source media="(min-width: 960px)" ng-srcset="{{imageG}}">
+                        <source media="(min-width: 600px)" ng-srcset="{{imageM}}"> 
+                        <img ng-src="{{imageDef}}" alt="cat">                        
+                    </picture>                    
+                    <figcaption ng-bind-html="dataDetall.figCaption" class="captionImages"></figcaption>
+                </figure> 
             </div>
         </div>
     </article>    

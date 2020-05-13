@@ -199,6 +199,10 @@ footer ul li {
     text-decoration: underline;
 }
 
+.recursosGrafics {
+    margin: 3rem 0;
+}
+
 .logoDetall{
     padding: 0 2rem 0 0;
     width: 100%;
