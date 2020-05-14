@@ -1,0 +1,5 @@
+codi:
+https://codigoonclick.com/editores-de-codigo-para-javascript/
+
+llibre:
+https://getflywheel.com/layout/best-javascript-libraries-frameworks-2020/

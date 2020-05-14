@@ -8,7 +8,7 @@ const SetLayoutController = (images) => {
             
             $scope.categoriesList = Object.entries(CATEGORIES).reduce((acc,[key,val]) => {
                 val.items.forEach(element => {
-                    element.img = images[element.codi];
+                    element.img = images[element.codi][0];
                 });
                 acc.push({codi: key, valor: val})
                 return acc;

@@ -203,6 +203,11 @@ footer ul li {
     margin: 3rem 0;
 }
 
+picture img {
+    max-width: 100%;
+    width: 100%;
+}
+
 .logoDetall{
     padding: 0 2rem 0 0;
     width: 100%;

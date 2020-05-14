@@ -1,0 +1,5 @@
+logo:
+https://www.deustoformacion.com/blog/programacion-diseno-web/lenguaje-programacion-html5-ya-puede-considerarse-estandar
+
+cheat:
+https://www.emezeta.com/articulos/html5-cheatsheet-chuleta-html

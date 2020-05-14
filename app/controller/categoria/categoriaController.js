@@ -11,7 +11,7 @@ const SetCategoriaController = (images) => {
                     const linkIframe = document.querySelector('.videoFluid a');
                     iframe.src = $scope.dataCategoria.videoEmbedLink;
                     linkIframe.href = $scope.dataCategoria.videoLink;
-                    $scope.dataCategoria.enllacos = CATEGORIES[$stateParams.typeCategoria].items.map(i=> { return {'codi': i.codi, 'desc': i.desc, 'img': images[i.codi]}});
+                    $scope.dataCategoria.enllacos = CATEGORIES[$stateParams.typeCategoria].items.map(i=> { return {'codi': i.codi, 'desc': i.desc, 'img': images[i.codi][0]}});
                 },
                 (error)=>{
                     console.log(error);
