@@ -65,7 +65,7 @@
                   <span class="descSideButton" ng-bind-html="categoria.valor.desc"></span>
                 </md-button> 
               </div>            
-              <md-list layout="column" ng-init="showItem=false" ng-show="showItem">
+              <md-list class="listSideMenu" layout="column" ng-init="showItem=false" ng-show="showItem">
                 <md-list-item  ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
                   <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start center">
                     <span flex="20"></span>

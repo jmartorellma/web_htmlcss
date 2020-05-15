@@ -77,21 +77,28 @@ aside md-toolbar {
     padding-left: 5px;
 }
 
-.listMenu.ng-hide {
+.listMenu.ng-hide,
+.listSideMenu.ng-hide {
     max-height: 0;
     overflow: hidden;
 }
 
 .listMenu.ng-hide-add,
-.listMenu.ng-hide-remove {
-    transition: all .3s;
+.listMenu.ng-hide-remove,
+.listSideMenu.ng-hide-add,
+.listSideMenu.ng-hide-remove {
+    transition: all .4s;
 }
 
 .listMenu {
     position: absolute;
     top: 42px;
     left: 8px;    
-    background-color: #e7e7e7;
+    background-color: #e7e7e7;    
+}
+
+.listMenu,
+.listSideMenu {
     max-height: 1000px;
     overflow: visible;
 }
