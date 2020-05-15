@@ -25,8 +25,8 @@
       <md-toolbar class="md-primary" layout="row" layout-align="start stretch" hide-xs hide-sm> 
         <ul layout="row" layout-align="space-around center" flex="grow">
           <li ng-repeat="categoria in categoriesList" class="itemMenu" layout="column">
-              <md-button id="{{categoria.valor.buttonId}}" class="md-primary md-raised" ng-class="{'md-accent':activeCat==categoria.codi}" ng-click="goCategoria(categoria.codi, categoria.valor)" ng-mouseenter="showCategoria(categoria.valor)" ng-mouseleave="hideCategoria(categoria.valor, $event)">
-                <md-icon class="material-icons">{{categoria.valor.icon}}</md-icon>
+              <md-button id="{{categoria.valor.buttonId}}" class="md-primary md-raised botonCat" ng-class="{'md-accent':activeCat==categoria.codi}" ng-click="goCategoria(categoria.codi, categoria.valor)" ng-mouseenter="showCategoria(categoria.valor)" ng-mouseleave="hideCategoria(categoria.valor, $event)">
+                <md-icon class="material-icons" ng-class="{'iconoCat': categoria.valor.show}">{{categoria.valor.icon}}</md-icon>
                 <span ng-bind-html="categoria.valor.desc"></span>
               </md-button> 
               <md-list id="{{categoria.valor.listId}}" class="listMenu" layout="column" ng-show="categoria.valor.show" ng-mouseleave="categoria.valor.show=false">
