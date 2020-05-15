@@ -30,7 +30,7 @@
                 <span ng-bind-html="categoria.valor.desc"></span>
               </md-button> 
               <md-list id="{{categoria.valor.listId}}" class="listMenu" layout="column" ng-show="categoria.valor.show" ng-mouseleave="categoria.valor.show=false">
-                <md-list-item  ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
+                <md-list-item ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
                   <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start stretch">
                     <img class="imatgeEnllac" ng-src="{{item.img}}" alt="imatge destacada detall" />
                     <span>{{item.desc}}</span>

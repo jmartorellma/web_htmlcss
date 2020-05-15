@@ -3,6 +3,7 @@ const AngularMainModule = (templates) => {
                               'constantsModule',
                               'ngMaterial',                           
                               'ngMessages',
+                              'ngAnimate',
                               'ngSanitize'
     ])
     .config(['$stateProvider', '$urlRouterProvider',
