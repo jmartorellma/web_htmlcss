@@ -25,7 +25,7 @@
       <md-toolbar class="md-primary" layout="row" layout-align="start stretch" hide-xs hide-sm> 
         <ul layout="row" layout-align="space-around center" flex="grow">
           <li ng-repeat="categoria in categoriesList" class="itemMenu" layout="column">
-              <md-button id="{{categoria.valor.buttonId}}" class="md-primary md-raised botonCat" ng-class="{'md-accent':activeCat==categoria.codi}" ng-click="goCategoria(categoria.codi, categoria.valor)" ng-mouseenter="showCategoria(categoria.valor)" ng-mouseleave="hideCategoria(categoria.valor, $event)">
+              <md-button id="{{categoria.valor.buttonId}}" class="md-primary md-raised botonCat" ng-class="{'md-accent':activeCat==categoria.codi || categoria.valor.show}" ng-click="goCategoria(categoria.codi, categoria.valor)" ng-mouseenter="showCategoria(categoria.valor)" ng-mouseleave="hideCategoria(categoria.valor, $event)">
                 <md-icon class="material-icons" ng-class="{'iconoCat': categoria.valor.show}">{{categoria.valor.icon}}</md-icon>
                 <span ng-bind-html="categoria.valor.desc"></span>
               </md-button> 
@@ -61,7 +61,7 @@
                   <md-icon class="material-icons" ng-click="showItem=!showItem" ng-show="showItem">remove_circle</md-icon>
                 </span>
                 <md-button ng-click="goCategoria(categoria.codi, categoria.valor)">
-                  <md-icon class="material-icons">{{categoria.valor.icon}}</md-icon>
+                  <md-icon class="material-icons" ng-class="{'iconoCat': showItem}">{{categoria.valor.icon}}</md-icon>
                   <span class="descSideButton" ng-bind-html="categoria.valor.desc"></span>
                 </md-button> 
               </div>            
