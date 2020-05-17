@@ -98,8 +98,10 @@ const SetDataFactory = () => {
                                 {"htmlText": "Bàsicament, la configuració constarà d'un punt d'entrada, on s'indica el punt exacte de d'on <cite>Webpack</cite> començarà a analitzar el codi per a generar els paquets; un punt de sortida, on es colocaran els paquets <abbr title='Hypertext Markup Language' lang='en'>HTML</abbr>, <abbr title='Cascading Style Sheets' lang='en'>CSS</abbr> o JavaScript que s'hagin generat; carregadors, que fan possible que <cite>Webpack</cite> transformi tots els fitxers requerits; i <span lang='en'>plugins<span> que almplien el rang de funcionalitats disponibles per defecte, oferint entre d'altres, optimització del codi empaquetat, gestió i optimització d'imatges, incloure traces de carregadors, comprovar com ha anat l'execució o afegir codi o variables en els fitxers de la nostra aplicació."}
                             ],
                             'altImg': 'Logo Webpack',
-                            'figCaption': 'Font de la imatge: <a href="https://camo.githubusercontent.com/d18f4a7a64244f703efcb322bf298dcb4ca38856/68747470733a2f2f7765627061636b2e6a732e6f72672f6173736574732f69636f6e2d7371756172652d6269672e737667" target="_blank"><cite>GitHub</cite> de <cite>Webpack</cite></a> - Autor: <a href="https://github.com/sokra" target="_blank">Tobias Koppers - sokra</a> - Llicència: <a href="https://en.wikipedia.org/wiki/MIT_License" rel="license" target="_blank"><span lang="en"><abbr title="Massachusets Institute of Technology">MIT</abbr> License</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/" hreflang="en" target="_blank">https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento</a>'
+                            'figCaption': 'Font de la imatge: <a href="https://camo.githubusercontent.com/d18f4a7a64244f703efcb322bf298dcb4ca38856/68747470733a2f2f7765627061636b2e6a732e6f72672f6173736574732f69636f6e2d7371756172652d6269672e737667" target="_blank"><cite>GitHub</cite> de <cite>Webpack</cite></a> - Autor: <a href="https://github.com/sokra" target="_blank">Tobias Koppers - sokra</a> - Llicència: <a href="https://github.com/webpack/media/blob/master/LICENSE" rel="license" target="_blank"><span lang="en">JS Foundation Trademark Policy</span></a>',
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/" hreflang="en" target="_blank">https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://medium.com/webpack/gsoc-2019-starting-off-the-dev-server-refactor-caacf0390fe5" target="_blank">Fòrum de <cite>Medium.com</cite></a> - Autor: <a href="https://medium.com/@Loonride?source=post_page-----caacf0390fe5----------------------" target="_blank">Kirill Nagaitsev</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://medium.com/webpack/the-contributors-guide-to-webpack-part-3-44cc149af02c" target="_blank">Fòrum de <cite>Medium.com</cite></a> - Autor: <a href="https://medium.com/@TheLarkInn?source=post_page-----44cc149af02c----------------------" target="_blank">Sean T. Larkin</a>'
                         },
                         'rollupjs': {
                             'paragrafs': [
@@ -109,7 +111,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Rollup.js',
                             'figCaption': 'Font de la imatge: <a href="https://www.freeicons.io/vector-and-svg-logos-icons-16/rollupjs-icon-9016" target="_blank">freeicons.io</cite></a> - Autor: <a href="https://www.freeicons.io/profile/3" target="_blank">icon King</a> - Llicència: <a href="https://creativecommons.org/licenses/by/3.0/deed.es" rel="license" target="_blank"><span lang="en">Creative Commons (Attribution 3.0 Unported)</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://rollupjs.org/guide/en/" hreflang="en" target="_blank">https://rollupjs.org/guide/en</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://rollupjs.org/guide/en/" hreflang="en" target="_blank">https://rollupjs.org/guide/en</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c" target="_blank">Fòrum de <cite>Medium.com</cite></a> - Autor: <a href="https://medium.com/@Rich_Harris?source=post_page-----a41ad427058c----------------------" target="_blank">Rich Harris</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://enmilocalfunciona.io/analizando-tu-primera-aplicacion-con-svelte-2" target="_blank">Blog <cite>Enmilocalfunciona.com</cite></a> - Autor: <a href="https://enmilocalfunciona.io/author/jesus-cuesta-arza/" target="_blank">Jesús Cuesta Arza</a>'
                         },
                         'parcel': {
                             'paragrafs': [
@@ -119,7 +123,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Parcel',
                             'figCaption': 'Font de la imatge: <a href="https://www.onlinelabels.com/clip-art/Open-Cardboard-Box-120356.htm" hreflang="en" target="_blank"><cite>Openclipart</cite></a> - Autor: <a href="https://www.onlinelabels.com/clip-art/clip-art-category.aspx?creator=GDJ" target="_blank">GDJ</a> - Llicència: <a href="https://openclipart.org/share" rel="license" target="_blank"><span lang="en">The Openclipart Sharing License 1.0</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://es.parceljs.org/" hreflang="es" target="_blank">https://es.parceljs.org</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://es.parceljs.org/" hreflang="es" target="_blank">https://es.parceljs.org</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://medium.com/codingthesmartway-com-blog/getting-started-with-parcel-197eb85a2c8c" target="_blank">Fòrum de <cite>Medium.com</cite></a> - Autor: <a href="https://medium.com/@s_eschweiler?source=post_page-----197eb85a2c8c----------------------" target="_blank">Sebastian Eschweiler</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://commons.wikimedia.org/wiki/File:WMTechConf2018_Oct_24_-_standardizing_front-end_development_tooling_-_QIII.jpg" target="_blank"><cite>Commons Wikimedia</cite></a> - Autor: Zack Wadghiri, Christoph Jauera'
                         },
                         'babel': {
                             'paragrafs': [
@@ -129,7 +135,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Babel',
                             'figCaption': 'Font de la imatge: <a href="https://github.com/babel/website/blob/3774ba0fe50796963e8a63389116e07d932bd2e3/website/static/img/babel.svg" hreflang="en" target="_blank"><cite>GitHub</cite> de <cite>Babel</cite></a> - Autor: <a href="https://github.com/hzoo" target="_blank">Henry Zhu</a> - Llicència: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license" target="_blank"><span lang="en">Creative Commons Attribution-Share Alike 4.0 International license</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://babeljs.io/docs/en/" hreflang="en" target="_blank">https://babeljs.io/docs/en</a> i <a href="https://en.wikipedia.org/wiki/Babel_(transcompiler)" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Babel_(transcompiler)</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://babeljs.io/docs/en/" hreflang="en" target="_blank">https://babeljs.io/docs/en</a> i <a href="https://en.wikipedia.org/wiki/Babel_(transcompiler)" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Babel_(transcompiler)</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://webengage.com/blog/transforming-our-javascript-code-at-build-time-with-babel/" target="_blank"><cite>Web Engage</cite></a> - Autor: <a href="https://webengage.com/blog/author/avlesh/" target="_blank">Avlesh Singh</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://twitter.com/graphcommons/status/715226798863302661/photo/1" target="_blank"><cite>Twitter</cite></a> - Autor: <a href="https://twitter.com/graphcommons" target="_blank">Graph Commons</a>'
                         },
                         'sass': {
                             'paragrafs': [
@@ -139,7 +147,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Sass',
                             'figCaption': 'Font de la imatge: <a href="http://sass-lang.com/styleguide/brand/" hreflang="en" target="_blank">Guia de <cite>Sass</cite></a> - Autor: <a href="http://sass-lang.com" target="_blank">http://sass-lang.com</a> - Llicència: <a href="https://en.wikipedia.org/wiki/Public_domain" rel="license" target="_blank"><span lang="en">Public domain</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://sass-lang.com/" hreflang="en" target="_blank">https://sass-lang.com</a> i <a href="https://es.wikipedia.org/wiki/Sass" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/Sass</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://sass-lang.com/" hreflang="en" target="_blank">https://sass-lang.com</a> i <a href="https://es.wikipedia.org/wiki/Sass" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/Sass</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://ed.team/blog/diferencias-entre-viariables-css-y-sass" target="_blank">Blog <cite>EDTeam</cite></a> - Autor: <a href="https://ed.team/blog/diferencias-entre-viariables-css-y-sass" target="_blank">Álex Mora Angulo</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://devcode.la/tutoriales/funciones-sass/" target="_blank"><cite>DevCode</cite></a> - Autor: Alexander Guevara Benites'
                         },
                         'postcss': {
                             'paragrafs': [
@@ -149,7 +159,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo PostCSS',
                             'figCaption': 'Font de la imatge: <a href="https://github.com/postcss/brand" hreflang="en" target="_blank"><cite>GitHub</cite> de <cite>PostCSS</cite></a> - Autor: Alexander Kurganov, Roman Shamin - Llicència: <a href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license" target="_blank"><span lang="en">Creative Commons Attribution 4.0 International license</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.sitepoint.com/an-introduction-to-postcss/" hreflang="en" target="_blank">https://www.sitepoint.com/an-introduction-to-postcss</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.sitepoint.com/an-introduction-to-postcss/" hreflang="en" target="_blank">https://www.sitepoint.com/an-introduction-to-postcss</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://www.ondho.com/postcss-mas-alla-del-css/" target="_blank">Blog <cite>Ondho</cite></a> - Autor: <a href="https://www.ondho.com/jorge-martinez/" target="_blank">Jorge Martínez</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://github.com/postcss/brand/blob/master/postcss-brand-spec.png" target="_blank"><cite>GitHub</cite> de <cite>PostCSS</cite></a> - Autor: <a href="https://github.com/stephenway" target="_blank">Stephen Way</a>',
                         },
                         'html5': {
                             'paragrafs': [
