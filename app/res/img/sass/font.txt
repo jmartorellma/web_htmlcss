@@ -1,5 +1,0 @@
-balança:
-https://ed.team/blog/diferencias-entre-viariables-css-y-sass
-
-ordinador:
-https://devcode.la/tutoriales/funciones-sass/

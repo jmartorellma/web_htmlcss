@@ -1,5 +1,0 @@
-graph:
-https://twitter.com/graphcommons/status/715226798863302661/photo/1
-
-machine: 
-https://webengage.com/blog/transforming-our-javascript-code-at-build-time-with-babel/

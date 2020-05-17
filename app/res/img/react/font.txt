@@ -1,5 +1,0 @@
-llum:
-https://interacso.com/blog/2019/06/17/simply-react-js-interacso-talk/
-
-codi:
-https://lagahe.com/react-private-routes/

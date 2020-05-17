@@ -1,5 +1,0 @@
-espiral:
-https://www.arsys.es/blog/programacion/diseno-web/flexbox-css3/
-
-prefijos:
-https://medium.com/@Gerson.Perez/para-qu%C3%A9-nos-sirve-usar-prefijos-css3-a9cf1ced4040

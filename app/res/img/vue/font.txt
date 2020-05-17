@@ -1,5 +1,0 @@
-spa:
-https://styde.net/instalacion-y-uso-de-vue-router-en-vue-js-2/
-
-pc:
-https://steemit.com/cervantes/@jesusbatallar/desarrollo-web-porque-vue
