@@ -161,7 +161,7 @@ const SetDataFactory = () => {
                             'figCaption': 'Font de la imatge: <a href="https://github.com/postcss/brand" hreflang="en" target="_blank"><cite>GitHub</cite> de <cite>PostCSS</cite></a> - Autor: Alexander Kurganov, Roman Shamin - Llicència: <a href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license" target="_blank"><span lang="en">Creative Commons Attribution 4.0 International license</span></a>',
                             'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://www.sitepoint.com/an-introduction-to-postcss/" hreflang="en" target="_blank">https://www.sitepoint.com/an-introduction-to-postcss</a>',
                             'figCaptionJPG': 'Font de la imatge: <a href="https://www.ondho.com/postcss-mas-alla-del-css/" target="_blank">Blog <cite>Ondho</cite></a> - Autor: <a href="https://www.ondho.com/jorge-martinez/" target="_blank">Jorge Martínez</a>',
-                            'figCaptionPNG': 'Font de la imatge: <a href="https://github.com/postcss/brand/blob/master/postcss-brand-spec.png" target="_blank"><cite>GitHub</cite> de <cite>PostCSS</cite></a> - Autor: <a href="https://github.com/stephenway" target="_blank">Stephen Way</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://github.com/postcss/brand/blob/master/postcss-brand-spec.png" target="_blank"><cite>GitHub</cite> de <cite>PostCSS</cite></a> - Autor: <a href="https://github.com/stephenway" target="_blank">Stephen Way</a>'
                         },
                         'html5': {
                             'paragrafs': [
@@ -171,7 +171,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo HTML5',
                             'figCaption': 'Font de la imatge: <a href="http://www.w3.org/html/logo/downloads/HTML5_Logo.svg" hreflang="en" target="_blank">Official <abbr title="Hypertext Markup Language 5" lang="en">HTML5</abbr> logo</a> - Autor: <a href="http://www.w3.org/html/logo/index.html" target="_blank">W3C</a> - Llicència: <a href="http://creativecommons.org/licenses/by/3.0/" rel="license" target="_blank"><span lang="en">Creative Commons Attribution 3.0 Unported</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://es.wikipedia.org/wiki/HTML" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/HTML</a> i <a href="https://developer.mozilla.org/es/docs/HTML/HTML5" hreflang="es" target="_blank">https://developer.mozilla.org/es/docs/HTML/HTML5</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://es.wikipedia.org/wiki/HTML" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/HTML</a> i <a href="https://developer.mozilla.org/es/docs/HTML/HTML5" hreflang="es" target="_blank">https://developer.mozilla.org/es/docs/HTML/HTML5</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://www.deustoformacion.com/blog/programacion-diseno-web/lenguaje-programacion-html5-ya-puede-considerarse-estandar" target="_blank">Blog <cite>Deusto Formación</cite></a> - Autor: <a href="https://www.deustoformacion.com/blog/felipgomez" target="_blank">Felip Gómez</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://www.emezeta.com/articulos/html5-cheatsheet-chuleta-html" target="_blank"><cite>Emezeta.com</cite></a> - Autor: <a href="https://www.emezeta.com/manz/" target="_blank">José Román Hernández</a>'
                         },
                         'css3': {
                             'paragrafs': [
@@ -181,7 +183,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo CSS3',
                             'figCaption': 'Font de la imatge: <a href="https://commons.wikimedia.org/wiki/File:CSS3_and_HTML5_badges.svg" hreflang="en" target="_blank"><abbr title="Cascading Style Sheets 3" lang="en">CSS3</abbr>logo</a> - Autor: Rudloff - Llicència: <a href="http://creativecommons.org/licenses/by/3.0/" rel="license" target="_blank"><span lang="en">Creative Commons Attribution 3.0 Unported</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada</a> i <a href="https://www.lawebera.es/xhtml-css/darle-uso-apropiado-css3.php" hreflang="es" target="_blank">https://www.lawebera.es/xhtml-css/darle-uso-apropiado-css3.php</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada</a> i <a href="https://www.lawebera.es/xhtml-css/darle-uso-apropiado-css3.php" hreflang="es" target="_blank">https://www.lawebera.es/xhtml-css/darle-uso-apropiado-css3.php</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://www.arsys.es/blog/programacion/diseno-web/flexbox-css3/" target="_blank">Blog de <cite>Arsys</cite></a> - Autor: <a href="https://www.arsys.es/blog/administrador/jmbaquero/" target="_blank">Jose Mª Baquero García</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://medium.com/@Gerson.Perez/para-qu%C3%A9-nos-sirve-usar-prefijos-css3-a9cf1ced4040" target="_blank">Fòrum de <cite>Medium.com</cite></a> - Autor: <a href="https://medium.com/@Gerson.Perez?source=post_page-----a9cf1ced4040----------------------" target="_blank">Gerson Pérez Aguilar</a>'
                         },
                         'javascript': {
                             'paragrafs': [
@@ -191,7 +195,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Javascript',
                             'figCaption': 'Font de la imatge: <a href="https://github.com/voodootikigod/logo.js/blob/1544bdeed/js.svg" hreflang="en" target="_blank"><cite>GitHub</cite></a> - Autor: <a href="https://github.com/voodootikigod" target="_blank">Chris Williams</a> - Llicència: <a href="https://github.com/voodootikigod/logo.js/blob/1544bdeed/LICENSE" rel="license" target="_blank"><span lang="en"><abbr title="Massachusets Institute of Technology">MIT</abbr> License</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" hreflang="es" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript</a> i <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Acerca_de_JavaScript" hreflang="es" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript/Acerca_de_JavaScript</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" hreflang="es" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript</a> i <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Acerca_de_JavaScript" hreflang="es" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript/Acerca_de_JavaScript</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://getflywheel.com/layout/best-javascript-libraries-frameworks-2020/" target="_blank"><cite>Getflywheel.com - Layout</cite></a> - Autor: <a href="https://getflywheel.com/layout/author/morgan/" target="_blank">Morgan Smith</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://codigoonclick.com/editores-de-codigo-para-javascript/" target="_blank"><cite>Código on click</cite></a> - Autor: <a href="https://codigoonclick.com/author/admin/" target="_blank">Grover Vásquez</a>'
                         },
                         'angular': {
                             'paragrafs': [
@@ -201,8 +207,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Angular',
                             'figCaption': 'Font de la imatge: <a href="https://angular.io/presskit.htm" hreflang="en" target="_blank"><cite lang="en">Angular Press Kit</cite></a> - Autor: <a href="https://www.google.com/" target="_blank">Google</a> - Llicència: <a href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license" target="_blank"><span lang="en">Creative Commons Attribution 4.0 International license</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://angular.io/" hreflang="en" target="_blank">https://angular.io</a> i <a href="https://es.wikipedia.org/wiki/Angular_(framework)" hreflang="en" target="_blank">https://es.wikipedia.org/wiki/Angular_(framework)</a>'
-
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://angular.io/" hreflang="en" target="_blank">https://angular.io</a> i <a href="https://es.wikipedia.org/wiki/Angular_(framework)" hreflang="en" target="_blank">https://es.wikipedia.org/wiki/Angular_(framework)</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="http://diegoboscan.com/razones-para-migrar-a-angular/" target="_blank">Página Diego Boscán</a> - Autor: <a href="http://diegoboscan.com/" target="_blank">Diego Boscán</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://codingpotions.com/introduccion-instalacion-angular" target="_blank"><cite>Coding Potions</cite></a> - Autor: <a href="https://twitter.com/JonaEstrella11" target="_blank">Jonathan Estrella</a>'
                         },
                         'react': {
                             'paragrafs': [
@@ -212,7 +219,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo React',
                             'figCaption': 'Font de la imatge: <a href="https://reactjs.org/" hreflang="en" target="_blank">Lloc web de <cite lang="en">React</cite></a> - Autor: <a href="https://reactjs.org/" target="_blank">ReactJS</a> - Llicència: <a href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license" target="_blank"><span lang="en">Creative Commons Attribution 4.0 International license</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://reactjs.org/" hreflang="en" target="_blank">https://reactjs.org</a> i <a href="https://es.wikipedia.org/wiki/React" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/React</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://reactjs.org/" hreflang="en" target="_blank">https://reactjs.org</a> i <a href="https://es.wikipedia.org/wiki/React" hreflang="es" target="_blank">https://es.wikipedia.org/wiki/React</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://interacso.com/blog/tag/react/" target="_blank">Blog <cite>Interacso</cite></a> - Autor: Interacso',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://lagahe.com/react-private-routes/" target="_blank"><cite>Lagahe</cite></a> - Autor: <a href="https://lagahe.com/author/daniel-cebrian-tarancon/" target="_blank">Daniel Cebrian Tarancon</a>'
                         },
                         'vue': {
                             'paragrafs': [
@@ -222,7 +231,9 @@ const SetDataFactory = () => {
                             ],
                             'altImg': 'Logo Vue',
                             'figCaption': 'Font de la imatge: <a href="https://github.com/vuejs/art/tree/9f8ee218d32b52c2d150212f22798a7a61689361" hreflang="en" target="_blank"><cite>GitHub</cite> de <cite>Vue</cite></a> - Autor: <a href="https://github.com/yyx990803" target="_blank">Evan You</a> - Llicència: <a href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license" target="_blank"><span lang="en">Creative Commons Attribution 4.0 International license</span></a>',
-                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://vuejs.org/v2/guide/" hreflang="en" target="_blank">https://vuejs.org/v2/guide</a> i <a href="https://en.wikipedia.org/wiki/Vue.js" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Vue.js</a>'
+                            'fontText': 'Textos elaborats a partir de la informació consultada a <a href="https://vuejs.org/v2/guide/" hreflang="en" target="_blank">https://vuejs.org/v2/guide</a> i <a href="https://en.wikipedia.org/wiki/Vue.js" hreflang="en" target="_blank">https://en.wikipedia.org/wiki/Vue.js</a>',
+                            'figCaptionJPG': 'Font de la imatge: <a href="https://steemit.com/cervantes/@jesusbatallar/desarrollo-web-porque-vue" target="_blank"><cite>Steemit</cite></a> - Autor: <a href="https://steemit.com/@jesusbatallar" target="_blank">Jesús Batallar</a>',
+                            'figCaptionPNG': 'Font de la imatge: <a href="https://styde.net/instalacion-y-uso-de-vue-router-en-vue-js-2/" target="_blank"><cite>Styde</cite></a> - Autor: <a href="https://styde.net/perfil/duilio/" target="_blank">Duilio Palacios</a>'
                         }
                     };                    
 
