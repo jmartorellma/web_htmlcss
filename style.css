@@ -86,6 +86,38 @@ aside md-toolbar {
     animation: spin 2s linear infinite;
 } 
 
+.lineBurguer {
+    height: 100%;
+    width: 100%;    
+}
+
+.lineBurguer div{
+    background-color: white;
+    height: 2px;
+    width: 22px;
+    margin: 3px 0;
+}
+
+.sideHeadContainer {
+    margin: 0 8px;
+}
+
+.botonClear {
+    cursor:pointer;
+    float:right;
+}
+
+.iconSide {
+    cursor: pointer;
+    outline: none;
+    font-size: 1.5rem;
+    width: 24px;
+    height: 24px;
+    color: white;
+    background-color: grey;
+    border-radius: 15px;
+}
+
 .listMenu.ng-hide,
 .listSideMenu.ng-hide {
     max-height: 0;
