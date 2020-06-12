@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,600i');
+/* @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,600,600i'); */
+
+@font-face {
+    font-family: 'libre_franklinregular';
+    src: url('./app/res/fonts/librefranklin-regular-webfont.woff2') format('woff2'),
+         url('./app/res/fonts/llibrefranklin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -8,7 +16,8 @@
 }
 
 body {
-    font: 400 16px/1.6 'Libre Franklin', sans-serif;
+    /* font: 400 16px/1.6 'Libre Franklin', sans-serif; */
+    font: 400 16px/1.6 'libre_franklinregular', sans-serif;
     color: rgb(0,0,0);
     overflow-x: hidden;
     word-wrap: break-word;
