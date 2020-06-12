@@ -5,14 +5,8 @@ const SetLayoutController = (images) => {
 
             $scope.logotip = images.logotip;
             $scope.jordi = images.jordi;
-
-            // $scope.ico_menu = images.menu;
-            // $scope.ico_clear = images.clear;
-            // $scope.ico_add = images.add;
-            // $scope.ico_remove = images.remove;
             
             $scope.categoriesList = Object.entries(CATEGORIES).reduce((acc,[key,val]) => {
-                // val.icon = images[val.icon];
                 val.items.forEach(element => {
                     element.img = images[element.codi][0];
                 });
