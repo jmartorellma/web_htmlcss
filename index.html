@@ -7,7 +7,7 @@
     <title>Enciclopèdia Front-end</title>
     <link rel="icon" type="image/png" href="./app/res/ico/computer.png">
     <link rel="stylesheet" href="./style.css">
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </head>
 <body ng-app="MainApp" ng-cloak layout="column" ng-controller="LayoutController">
   <a class="sr" href="#main">Salta al contingut principal</a>
@@ -17,7 +17,7 @@
         <div layout="row" layout-align="space-between center" layout-align-gt-sm="center center"> 
           <img id="logotip" ng-click="goHome()" ng-src="{{logotip}}" alt="logo enciclopedia"/>
           <h2 ng-click="goHome()" layout="row" layout-align="center center" layout-padding><span>Enciclopèdia <span lang='en'>Front-end</span></span></h2>
-          <md-button class="md-fab md-primary md-mini" ng-click="toggleMenu('sideNavMenuBurguer')" hide-gt-sm layout="row" layout-align="center center">
+          <md-button class="md-fab md-primary md-mini" ng-click="toggleMenu('sideNavMenuBurguer')" hide-gt-sm layout="row" layout-align="center center" aria-label="burguer-menu">
             <!-- <md-icon class="md-icon-button material-icons">menu</md-icon> -->
             <!-- <md-icon class="md-icon-button" md-svg-src="{{ico_menu}}"></md-icon> -->
             <div class="lineBurguer" layout="column" layout-align="center center">
@@ -31,14 +31,14 @@
       <md-toolbar class="md-primary" layout="row" layout-align="start stretch" hide-xs hide-sm> 
         <ul layout="row" layout-align="space-around center" flex="grow">
           <li ng-repeat="categoria in categoriesList" class="itemMenu" layout="column">
-              <md-button id="{{categoria.valor.buttonId}}" class="md-primary md-raised botonCat" ng-class="{'md-accent':activeCat==categoria.codi || categoria.valor.show}" ng-click="goCategoria(categoria.codi, categoria.valor)" ng-mouseenter="showCategoria(categoria.valor)" ng-mouseleave="hideCategoria(categoria.valor, $event)">
+              <md-button id="{{categoria.valor.buttonId}}" class="md-primary md-raised botonCat" ng-class="{'md-accent':activeCat==categoria.codi || categoria.valor.show}" ng-click="goCategoria(categoria.codi, categoria.valor)" ng-mouseenter="showCategoria(categoria.valor)" ng-mouseleave="hideCategoria(categoria.valor, $event)" aria-label="boto-categoria">
                 <!-- <md-icon class="material-icons" ng-class="{'iconoCat': categoria.valor.show}">{{categoria.valor.icon}}</md-icon> -->
                 <!-- <md-icon ng-class="{'iconoCat': categoria.valor.show}" md-svg-src="{{categoria.valor.icon}}"></md-icon> -->
                 <span ng-bind-html="categoria.valor.desc"></span>
               </md-button> 
               <md-list id="{{categoria.valor.listId}}" class="listMenu" layout="column" ng-show="categoria.valor.show" ng-mouseleave="categoria.valor.show=false">
                 <md-list-item ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
-                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start stretch">
+                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start stretch" aria-label="boto-detall">
                     <img class="imatgeEnllac" ng-src="{{item.img}}" alt="imatge destacada detall" />
                     <span>{{item.desc}}</span>
                   </md-button> 
@@ -77,7 +77,7 @@
                   <span class="iconSide" ng-click="showItem=!showItem" ng-show="!showItem" layout="row" layout-align="center center">+</span>
                   <span class="iconSide" ng-click="showItem=!showItem" ng-show="showItem" layout="row" layout-align="center center">-</span>
                 </span>
-                <md-button ng-click="goCategoria(categoria.codi, categoria.valor)">
+                <md-button ng-click="goCategoria(categoria.codi, categoria.valor)" aria-label="boto-categoria">
                   <!-- <md-icon class="material-icons" ng-class="{'iconoCat': showItem}">{{categoria.valor.icon}}</md-icon> -->
                   <!-- <md-icon ng-class="{'iconoCat': showItem}" md-svg-src="{{categoria.valor.icon}}"></md-icon> -->
                   <span class="descSideButton" ng-bind-html="categoria.valor.desc"></span>
@@ -85,7 +85,7 @@
               </div>            
               <md-list class="listSideMenu" layout="column" ng-init="showItem=false" ng-show="showItem">
                 <md-list-item  ng-repeat="item in categoria.valor.items" layout="column" layout-align="start stretch">
-                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start center">
+                  <md-button class="md-primary md-accent" ng-click="goDetall(categoria.codi, categoria.valor, item.codi)" layout="row" layout-align="start center" aria-label="boto-detall">
                     <span flex="20"></span>
                     <span layout="row" layout-align="start stretch">                      
                       <img class="imatgeEnllac imatgeLateral" ng-src="{{item.img}}" alt="imatge destacada detall" />
@@ -120,5 +120,6 @@
       </div>      
     </md-toolbar>
   </footer> 
+  <script src="index.js"></script>
 </body>
 </html>
