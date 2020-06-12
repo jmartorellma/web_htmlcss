@@ -1,5 +1,5 @@
 // import './node_modules/material-icons/iconfont/material-icons.css';
-import './node_modules/angular-material/angular-material.min.css';
+// import './node_modules/angular-material/angular-material.min.css';
 
 import './node_modules/core-js/modules/es6.array.find.js';
 import './node_modules/core-js/modules/es7.object.entries.js';
