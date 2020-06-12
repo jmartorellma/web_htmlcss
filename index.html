@@ -18,7 +18,8 @@
           <img id="logotip" ng-click="goHome()" ng-src="{{logotip}}" alt="logo enciclopedia"/>
           <h2 ng-click="goHome()" layout="row" layout-align="center center" layout-padding><span>Enciclopèdia <span lang='en'>Front-end</span></span></h2>
           <md-button class="md-fab md-primary md-mini" ng-click="toggleMenu('sideNavMenuBurguer')" hide-gt-sm layout="row" layout-align="center center">
-            <md-icon class="md-icon-button material-icons">menu</md-icon>
+            <!-- <md-icon class="md-icon-button material-icons">menu</md-icon> -->
+            <md-icon class="md-icon-button" md-svg-src="{{ico_menu}}"></md-icon>
           </md-button>
         </div>
       </md-toolbar>      
@@ -26,7 +27,8 @@
         <ul layout="row" layout-align="space-around center" flex="grow">
           <li ng-repeat="categoria in categoriesList" class="itemMenu" layout="column">
               <md-button id="{{categoria.valor.buttonId}}" class="md-primary md-raised botonCat" ng-class="{'md-accent':activeCat==categoria.codi || categoria.valor.show}" ng-click="goCategoria(categoria.codi, categoria.valor)" ng-mouseenter="showCategoria(categoria.valor)" ng-mouseleave="hideCategoria(categoria.valor, $event)">
-                <md-icon class="material-icons" ng-class="{'iconoCat': categoria.valor.show}">{{categoria.valor.icon}}</md-icon>
+                <!-- <md-icon class="material-icons" ng-class="{'iconoCat': categoria.valor.show}">{{categoria.valor.icon}}</md-icon> -->
+                <md-icon ng-class="{'iconoCat': categoria.valor.show}" md-svg-src="{{categoria.valor.icon}}"></md-icon>
                 <span ng-bind-html="categoria.valor.desc"></span>
               </md-button> 
               <md-list id="{{categoria.valor.listId}}" class="listMenu" layout="column" ng-show="categoria.valor.show" ng-mouseleave="categoria.valor.show=false">
@@ -48,7 +50,8 @@
         <header layout="column">
           <md-toolbar class="md-primary" layout="column" layout-align="center center">  
             <h3>Enciclopèdia Front-end</h3>
-            <md-icon class="material-icons" ng-click="closeSideNav('sideNavMenuBurguer');">clear</md-icon>
+            <!-- <md-icon class="material-icons" ng-click="closeSideNav('sideNavMenuBurguer');">clear</md-icon> -->
+            <md-icon md-svg-src="{{ico_clear}}" ng-click="closeSideNav('sideNavMenuBurguer');"></md-icon>
           </md-toolbar>
           <span layout="row" layout-align="center center" layout-padding><h4>CATEGORIES</h4></span>
         </header>
@@ -57,11 +60,14 @@
             <md-list-item ng-repeat="categoria in categoriesList" class="sideMenu" layout="column" layout-align="start stretch">
               <div layout="row" layout-alig="start center">
                 <span layout="row" layout-align="start center">
-                  <md-icon class="material-icons" ng-click="showItem=!showItem" ng-show="!showItem">add_circle</md-icon>
-                  <md-icon class="material-icons" ng-click="showItem=!showItem" ng-show="showItem">remove_circle</md-icon>
+                  <!-- <md-icon class="material-icons" ng-click="showItem=!showItem" ng-show="!showItem">add_circle</md-icon>
+                  <md-icon class="material-icons" ng-click="showItem=!showItem" ng-show="showItem">remove_circle</md-icon> -->
+                  <md-icon md-svg-src="{{ico_add}}" ng-click="showItem=!showItem" ng-show="!showItem"></md-icon>
+                  <md-icon md-svg-src="{{ico_remove}}" ng-click="showItem=!showItem" ng-show="showItem"></md-icon>
                 </span>
                 <md-button ng-click="goCategoria(categoria.codi, categoria.valor)">
-                  <md-icon class="material-icons" ng-class="{'iconoCat': showItem}">{{categoria.valor.icon}}</md-icon>
+                  <!-- <md-icon class="material-icons" ng-class="{'iconoCat': showItem}">{{categoria.valor.icon}}</md-icon> -->
+                  <md-icon ng-class="{'iconoCat': showItem}" md-svg-src="{{categoria.valor.icon}}"></md-icon>
                   <span class="descSideButton" ng-bind-html="categoria.valor.desc"></span>
                 </md-button> 
               </div>            
