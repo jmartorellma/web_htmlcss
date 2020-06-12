@@ -97,14 +97,14 @@ import webpackPNG960 from '../res/img/webpack/webpackPNG-960.png';
 //Other
 import logotip from '../res/img/logotip.svg';
 import jordi from '../res/img/jordi.jpg';
-import build from '../res/ico/build.svg';
-import create from '../res/ico/create.svg';
-import layers from '../res/ico/layers.svg';
-import menu from '../res/ico/menu.svg';
-import toys from '../res/ico/toys.svg';
-import clear from '../res/ico/clear.svg';
-import add from '../res/ico/add.svg';
-import remove from '../res/ico/remove.svg';
+// import build from '../res/ico/build.svg';
+// import create from '../res/ico/create.svg';
+// import layers from '../res/ico/layers.svg';
+// import menu from '../res/ico/menu.svg';
+// import toys from '../res/ico/toys.svg';
+// import clear from '../res/ico/clear.svg';
+// import add from '../res/ico/add.svg';
+// import remove from '../res/ico/remove.svg';
  
 const images = {
     'angular': [angular, angularJPG, angularJPG600, angularJPG960, angularPNG, angularPNG600, angularPNG960],
@@ -120,15 +120,15 @@ const images = {
     'vue': [vue, vueJPG, vueJPG600, vueJPG960, vuePNG, vuePNG600, vuePNG960],
     'webpack': [webpack, webpackJPG, webpackJPG600, webpackJPG960, webpackPNG, webpackPNG600, webpackPNG960],
     'logotip': logotip,
-    'jordi': jordi,
-    'build': build,
-    'create': create,
-    'layers': layers,
-    'menu': menu,
-    'toys': toys,
-    'clear': clear,
-    'add': add,
-    'remove': remove
+    'jordi': jordi
+    // 'build': build,
+    // 'create': create,
+    // 'layers': layers,
+    // 'menu': menu,
+    // 'toys': toys,
+    // 'clear': clear,
+    // 'add': add,
+    // 'remove': remove
 }
 
 export {images}
